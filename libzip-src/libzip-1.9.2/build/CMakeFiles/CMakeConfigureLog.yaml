@@ -1,0 +1,2230 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:233 (message)"
+      - "CMakeLists.txt:8 (project)"
+    message: |
+      The system is: Linux - 6.8.11-amd64 - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:8 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/cc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/3.28.3/CompilerIdC/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:8 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-mX2d6M"
+      binary: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-mX2d6M"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/cmake"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-mX2d6M'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_07273/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_07273.dir/build.make CMakeFiles/cmTC_07273.dir/build
+        gmake[1]: Entering directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-mX2d6M'
+        Building C object CMakeFiles/cmTC_07273.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -v -o CMakeFiles/cmTC_07273.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Debian 13.3.0-3' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/reproducible-path/gcc-13-13.3.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/reproducible-path/gcc-13-13.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=3
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.3.0 (Debian 13.3.0-3) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_07273.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_07273.dir/'
+         /usr/libexec/gcc/x86_64-linux-gnu/13/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_07273.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -o /tmp/ccm10zRM.s
+        GNU C17 (Debian 13.3.0-3) version 13.3.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 13.3.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/x86_64-linux-gnu/13/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        Compiler executable checksum: ae5cf03b99bc4045e189bbfa8c9cdfda
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_07273.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_07273.dir/'
+         as -v --64 -o CMakeFiles/cmTC_07273.dir/CMakeCCompilerABI.c.o /tmp/ccm10zRM.s
+        GNU assembler version 2.42.90 (x86_64-linux-gnu) using BFD version (GNU Binutils for Debian) 2.42.90.20240720
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_07273.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_07273.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_07273
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_07273.dir/link.txt --verbose=1
+        /usr/bin/cc  -v -rdynamic CMakeFiles/cmTC_07273.dir/CMakeCCompilerABI.c.o -o cmTC_07273 
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Debian 13.3.0-3' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/reproducible-path/gcc-13-13.3.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/reproducible-path/gcc-13-13.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=3
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.3.0 (Debian 13.3.0-3) 
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_07273' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_07273.'
+         /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/cc5SzdiY.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_07273 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. CMakeFiles/cmTC_07273.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_07273' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_07273.'
+        gmake[1]: Leaving directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-mX2d6M'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:8 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/x86_64-linux-gnu/13/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/13/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/13/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/gcc/x86_64-linux-gnu/13/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/usr/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:8 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-mX2d6M']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_07273/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_07273.dir/build.make CMakeFiles/cmTC_07273.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-mX2d6M']
+        ignore line: [Building C object CMakeFiles/cmTC_07273.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_07273.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Debian 13.3.0-3' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/reproducible-path/gcc-13-13.3.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/reproducible-path/gcc-13-13.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=3]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.3.0 (Debian 13.3.0-3) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_07273.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_07273.dir/']
+        ignore line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_07273.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -o /tmp/ccm10zRM.s]
+        ignore line: [GNU C17 (Debian 13.3.0-3) version 13.3.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 13.3.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/13/../../../../x86_64-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/13/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: ae5cf03b99bc4045e189bbfa8c9cdfda]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_07273.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_07273.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_07273.dir/CMakeCCompilerABI.c.o /tmp/ccm10zRM.s]
+        ignore line: [GNU assembler version 2.42.90 (x86_64-linux-gnu) using BFD version (GNU Binutils for Debian) 2.42.90.20240720]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_07273.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_07273.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_07273]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_07273.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/cc  -v -rdynamic CMakeFiles/cmTC_07273.dir/CMakeCCompilerABI.c.o -o cmTC_07273 ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Debian 13.3.0-3' --with-bugurl=file:///usr/share/doc/gcc-13/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-13 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/reproducible-path/gcc-13-13.3.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/reproducible-path/gcc-13-13.3.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=3]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.3.0 (Debian 13.3.0-3) ]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/13/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/13/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/13/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_07273' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_07273.']
+        link line: [ /usr/libexec/gcc/x86_64-linux-gnu/13/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper -plugin-opt=-fresolution=/tmp/cc5SzdiY.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_07273 /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/13 -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/13/../../.. CMakeFiles/cmTC_07273.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o]
+          arg [/usr/libexec/gcc/x86_64-linux-gnu/13/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/libexec/gcc/x86_64-linux-gnu/13/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/13/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cc5SzdiY.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-export-dynamic] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_07273] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/13/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../..]
+          arg [CMakeFiles/cmTC_07273.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13] ==> [/usr/lib/gcc/x86_64-linux-gnu/13]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/13/../../..] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/13;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "CMakeLists.txt:39 (check_include_files)"
+    checks:
+      - "Looking for include file CommonCrypto/CommonCrypto.h"
+    directories:
+      source: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-Vv79aq"
+      binary: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-Vv79aq"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/cmake"
+    buildResult:
+      variable: "COMMONCRYPTO_FOUND"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-Vv79aq'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c67c2/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_c67c2.dir/build.make CMakeFiles/cmTC_c67c2.dir/build
+        gmake[1]: Entering directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-Vv79aq'
+        Building C object CMakeFiles/cmTC_c67c2.dir/COMMONCRYPTO_FOUND.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_c67c2.dir/COMMONCRYPTO_FOUND.c.o -c /home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-Vv79aq/COMMONCRYPTO_FOUND.c
+        /home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-Vv79aq/COMMONCRYPTO_FOUND.c:2:10: fatal error: CommonCrypto/CommonCrypto.h: No such file or directory
+            2 | #include <CommonCrypto/CommonCrypto.h>
+              |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        compilation terminated.
+        gmake[1]: *** [CMakeFiles/cmTC_c67c2.dir/build.make:78: CMakeFiles/cmTC_c67c2.dir/COMMONCRYPTO_FOUND.c.o] Error 1
+        gmake[1]: Leaving directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-Vv79aq'
+        gmake: *** [Makefile:127: cmTC_c67c2/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "CMakeLists.txt:90 (check_function_exists)"
+    checks:
+      - "Looking for _close"
+    directories:
+      source: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-Y0XmL0"
+      binary: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-Y0XmL0"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/cmake"
+    buildResult:
+      variable: "HAVE__CLOSE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-Y0XmL0'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_7b5f5/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_7b5f5.dir/build.make CMakeFiles/cmTC_7b5f5.dir/build
+        gmake[1]: Entering directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-Y0XmL0'
+        Building C object CMakeFiles/cmTC_7b5f5.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=_close -o CMakeFiles/cmTC_7b5f5.dir/CheckFunctionExists.c.o -c /home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-Y0XmL0/CheckFunctionExists.c
+        Linking C executable cmTC_7b5f5
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7b5f5.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=_close -rdynamic CMakeFiles/cmTC_7b5f5.dir/CheckFunctionExists.c.o -o cmTC_7b5f5 
+        /usr/bin/ld: CMakeFiles/cmTC_7b5f5.dir/CheckFunctionExists.c.o: in function `main':
+        CheckFunctionExists.c:(.text+0x10): undefined reference to `_close'
+        collect2: error: ld returned 1 exit status
+        gmake[1]: *** [CMakeFiles/cmTC_7b5f5.dir/build.make:99: cmTC_7b5f5] Error 1
+        gmake[1]: Leaving directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-Y0XmL0'
+        gmake: *** [Makefile:127: cmTC_7b5f5/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "CMakeLists.txt:91 (check_function_exists)"
+    checks:
+      - "Looking for _dup"
+    directories:
+      source: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-V9EVs5"
+      binary: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-V9EVs5"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/cmake"
+    buildResult:
+      variable: "HAVE__DUP"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-V9EVs5'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_264eb/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_264eb.dir/build.make CMakeFiles/cmTC_264eb.dir/build
+        gmake[1]: Entering directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-V9EVs5'
+        Building C object CMakeFiles/cmTC_264eb.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=_dup -o CMakeFiles/cmTC_264eb.dir/CheckFunctionExists.c.o -c /home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-V9EVs5/CheckFunctionExists.c
+        Linking C executable cmTC_264eb
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_264eb.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=_dup -rdynamic CMakeFiles/cmTC_264eb.dir/CheckFunctionExists.c.o -o cmTC_264eb 
+        /usr/bin/ld: CMakeFiles/cmTC_264eb.dir/CheckFunctionExists.c.o: in function `main':
+        CheckFunctionExists.c:(.text+0x10): undefined reference to `_dup'
+        collect2: error: ld returned 1 exit status
+        gmake[1]: *** [CMakeFiles/cmTC_264eb.dir/build.make:99: cmTC_264eb] Error 1
+        gmake[1]: Leaving directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-V9EVs5'
+        gmake: *** [Makefile:127: cmTC_264eb/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "CMakeLists.txt:92 (check_function_exists)"
+    checks:
+      - "Looking for _fdopen"
+    directories:
+      source: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-VpUDxp"
+      binary: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-VpUDxp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/cmake"
+    buildResult:
+      variable: "HAVE__FDOPEN"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-VpUDxp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_1529a/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_1529a.dir/build.make CMakeFiles/cmTC_1529a.dir/build
+        gmake[1]: Entering directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-VpUDxp'
+        Building C object CMakeFiles/cmTC_1529a.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=_fdopen -o CMakeFiles/cmTC_1529a.dir/CheckFunctionExists.c.o -c /home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-VpUDxp/CheckFunctionExists.c
+        Linking C executable cmTC_1529a
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1529a.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=_fdopen -rdynamic CMakeFiles/cmTC_1529a.dir/CheckFunctionExists.c.o -o cmTC_1529a 
+        /usr/bin/ld: CMakeFiles/cmTC_1529a.dir/CheckFunctionExists.c.o: in function `main':
+        CheckFunctionExists.c:(.text+0x10): undefined reference to `_fdopen'
+        collect2: error: ld returned 1 exit status
+        gmake[1]: *** [CMakeFiles/cmTC_1529a.dir/build.make:99: cmTC_1529a] Error 1
+        gmake[1]: Leaving directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-VpUDxp'
+        gmake: *** [Makefile:127: cmTC_1529a/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "CMakeLists.txt:93 (check_function_exists)"
+    checks:
+      - "Looking for _fileno"
+    directories:
+      source: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-3c4xb2"
+      binary: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-3c4xb2"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/cmake"
+    buildResult:
+      variable: "HAVE__FILENO"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-3c4xb2'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_4f575/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_4f575.dir/build.make CMakeFiles/cmTC_4f575.dir/build
+        gmake[1]: Entering directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-3c4xb2'
+        Building C object CMakeFiles/cmTC_4f575.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=_fileno -o CMakeFiles/cmTC_4f575.dir/CheckFunctionExists.c.o -c /home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-3c4xb2/CheckFunctionExists.c
+        Linking C executable cmTC_4f575
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4f575.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=_fileno -rdynamic CMakeFiles/cmTC_4f575.dir/CheckFunctionExists.c.o -o cmTC_4f575 
+        /usr/bin/ld: CMakeFiles/cmTC_4f575.dir/CheckFunctionExists.c.o: in function `main':
+        CheckFunctionExists.c:(.text+0x10): undefined reference to `_fileno'
+        collect2: error: ld returned 1 exit status
+        gmake[1]: *** [CMakeFiles/cmTC_4f575.dir/build.make:99: cmTC_4f575] Error 1
+        gmake[1]: Leaving directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-3c4xb2'
+        gmake: *** [Makefile:127: cmTC_4f575/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "CMakeLists.txt:94 (check_function_exists)"
+    checks:
+      - "Looking for _setmode"
+    directories:
+      source: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-skdYPQ"
+      binary: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-skdYPQ"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/cmake"
+    buildResult:
+      variable: "HAVE__SETMODE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-skdYPQ'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_46062/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_46062.dir/build.make CMakeFiles/cmTC_46062.dir/build
+        gmake[1]: Entering directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-skdYPQ'
+        Building C object CMakeFiles/cmTC_46062.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=_setmode -o CMakeFiles/cmTC_46062.dir/CheckFunctionExists.c.o -c /home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-skdYPQ/CheckFunctionExists.c
+        Linking C executable cmTC_46062
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_46062.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=_setmode -rdynamic CMakeFiles/cmTC_46062.dir/CheckFunctionExists.c.o -o cmTC_46062 
+        /usr/bin/ld: CMakeFiles/cmTC_46062.dir/CheckFunctionExists.c.o: in function `main':
+        CheckFunctionExists.c:(.text+0x10): undefined reference to `_setmode'
+        collect2: error: ld returned 1 exit status
+        gmake[1]: *** [CMakeFiles/cmTC_46062.dir/build.make:99: cmTC_46062] Error 1
+        gmake[1]: Leaving directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-skdYPQ'
+        gmake: *** [Makefile:127: cmTC_46062/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "CMakeLists.txt:95 (check_symbol_exists)"
+    checks:
+      - "Looking for _snprintf"
+    directories:
+      source: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-ZHPQvO"
+      binary: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-ZHPQvO"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/cmake"
+    buildResult:
+      variable: "HAVE__SNPRINTF"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-ZHPQvO'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_164ee/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_164ee.dir/build.make CMakeFiles/cmTC_164ee.dir/build
+        gmake[1]: Entering directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-ZHPQvO'
+        Building C object CMakeFiles/cmTC_164ee.dir/CheckSymbolExists.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_164ee.dir/CheckSymbolExists.c.o -c /home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-ZHPQvO/CheckSymbolExists.c
+        /home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-ZHPQvO/CheckSymbolExists.c: In function ‘main’:
+        /home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-ZHPQvO/CheckSymbolExists.c:8:19: error: ‘_snprintf’ undeclared (first use in this function); did you mean ‘vsnprintf’?
+            8 |   return ((int*)(&_snprintf))[argc];
+              |                   ^~~~~~~~~
+              |                   vsnprintf
+        /home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-ZHPQvO/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+        gmake[1]: *** [CMakeFiles/cmTC_164ee.dir/build.make:78: CMakeFiles/cmTC_164ee.dir/CheckSymbolExists.c.o] Error 1
+        gmake[1]: Leaving directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-ZHPQvO'
+        gmake: *** [Makefile:127: cmTC_164ee/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "CMakeLists.txt:96 (check_function_exists)"
+    checks:
+      - "Looking for _strdup"
+    directories:
+      source: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-LPc4V4"
+      binary: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-LPc4V4"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/cmake"
+    buildResult:
+      variable: "HAVE__STRDUP"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-LPc4V4'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_df67e/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_df67e.dir/build.make CMakeFiles/cmTC_df67e.dir/build
+        gmake[1]: Entering directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-LPc4V4'
+        Building C object CMakeFiles/cmTC_df67e.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=_strdup -o CMakeFiles/cmTC_df67e.dir/CheckFunctionExists.c.o -c /home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-LPc4V4/CheckFunctionExists.c
+        Linking C executable cmTC_df67e
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_df67e.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=_strdup -rdynamic CMakeFiles/cmTC_df67e.dir/CheckFunctionExists.c.o -o cmTC_df67e 
+        /usr/bin/ld: CMakeFiles/cmTC_df67e.dir/CheckFunctionExists.c.o: in function `main':
+        CheckFunctionExists.c:(.text+0x10): undefined reference to `_strdup'
+        collect2: error: ld returned 1 exit status
+        gmake[1]: *** [CMakeFiles/cmTC_df67e.dir/build.make:99: cmTC_df67e] Error 1
+        gmake[1]: Leaving directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-LPc4V4'
+        gmake: *** [Makefile:127: cmTC_df67e/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "CMakeLists.txt:97 (check_symbol_exists)"
+    checks:
+      - "Looking for _stricmp"
+    directories:
+      source: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-CHpUzS"
+      binary: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-CHpUzS"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/cmake"
+    buildResult:
+      variable: "HAVE__STRICMP"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-CHpUzS'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c6692/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_c6692.dir/build.make CMakeFiles/cmTC_c6692.dir/build
+        gmake[1]: Entering directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-CHpUzS'
+        Building C object CMakeFiles/cmTC_c6692.dir/CheckSymbolExists.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_c6692.dir/CheckSymbolExists.c.o -c /home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-CHpUzS/CheckSymbolExists.c
+        /home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-CHpUzS/CheckSymbolExists.c: In function ‘main’:
+        /home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-CHpUzS/CheckSymbolExists.c:8:19: error: ‘_stricmp’ undeclared (first use in this function); did you mean ‘strncmp’?
+            8 |   return ((int*)(&_stricmp))[argc];
+              |                   ^~~~~~~~
+              |                   strncmp
+        /home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-CHpUzS/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+        gmake[1]: *** [CMakeFiles/cmTC_c6692.dir/build.make:78: CMakeFiles/cmTC_c6692.dir/CheckSymbolExists.c.o] Error 1
+        gmake[1]: Leaving directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-CHpUzS'
+        gmake: *** [Makefile:127: cmTC_c6692/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "CMakeLists.txt:98 (check_function_exists)"
+    checks:
+      - "Looking for _strtoi64"
+    directories:
+      source: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-K3K5Sm"
+      binary: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-K3K5Sm"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/cmake"
+    buildResult:
+      variable: "HAVE__STRTOI64"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-K3K5Sm'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_02c6e/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_02c6e.dir/build.make CMakeFiles/cmTC_02c6e.dir/build
+        gmake[1]: Entering directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-K3K5Sm'
+        Building C object CMakeFiles/cmTC_02c6e.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=_strtoi64 -o CMakeFiles/cmTC_02c6e.dir/CheckFunctionExists.c.o -c /home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-K3K5Sm/CheckFunctionExists.c
+        Linking C executable cmTC_02c6e
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_02c6e.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=_strtoi64 -rdynamic CMakeFiles/cmTC_02c6e.dir/CheckFunctionExists.c.o -o cmTC_02c6e 
+        /usr/bin/ld: CMakeFiles/cmTC_02c6e.dir/CheckFunctionExists.c.o: in function `main':
+        CheckFunctionExists.c:(.text+0x10): undefined reference to `_strtoi64'
+        collect2: error: ld returned 1 exit status
+        gmake[1]: *** [CMakeFiles/cmTC_02c6e.dir/build.make:99: cmTC_02c6e] Error 1
+        gmake[1]: Leaving directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-K3K5Sm'
+        gmake: *** [Makefile:127: cmTC_02c6e/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "CMakeLists.txt:99 (check_function_exists)"
+    checks:
+      - "Looking for _strtoui64"
+    directories:
+      source: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-FrUuN1"
+      binary: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-FrUuN1"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/cmake"
+    buildResult:
+      variable: "HAVE__STRTOUI64"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-FrUuN1'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ed4fa/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_ed4fa.dir/build.make CMakeFiles/cmTC_ed4fa.dir/build
+        gmake[1]: Entering directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-FrUuN1'
+        Building C object CMakeFiles/cmTC_ed4fa.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=_strtoui64 -o CMakeFiles/cmTC_ed4fa.dir/CheckFunctionExists.c.o -c /home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-FrUuN1/CheckFunctionExists.c
+        Linking C executable cmTC_ed4fa
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ed4fa.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=_strtoui64 -rdynamic CMakeFiles/cmTC_ed4fa.dir/CheckFunctionExists.c.o -o cmTC_ed4fa 
+        /usr/bin/ld: CMakeFiles/cmTC_ed4fa.dir/CheckFunctionExists.c.o: in function `main':
+        CheckFunctionExists.c:(.text+0x10): undefined reference to `_strtoui64'
+        collect2: error: ld returned 1 exit status
+        gmake[1]: *** [CMakeFiles/cmTC_ed4fa.dir/build.make:99: cmTC_ed4fa] Error 1
+        gmake[1]: Leaving directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-FrUuN1'
+        gmake: *** [Makefile:127: cmTC_ed4fa/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "CMakeLists.txt:100 (check_function_exists)"
+    checks:
+      - "Looking for _unlink"
+    directories:
+      source: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-Acmi9P"
+      binary: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-Acmi9P"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/cmake"
+    buildResult:
+      variable: "HAVE__UNLINK"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-Acmi9P'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_17f48/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_17f48.dir/build.make CMakeFiles/cmTC_17f48.dir/build
+        gmake[1]: Entering directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-Acmi9P'
+        Building C object CMakeFiles/cmTC_17f48.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=_unlink -o CMakeFiles/cmTC_17f48.dir/CheckFunctionExists.c.o -c /home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-Acmi9P/CheckFunctionExists.c
+        Linking C executable cmTC_17f48
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_17f48.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=_unlink -rdynamic CMakeFiles/cmTC_17f48.dir/CheckFunctionExists.c.o -o cmTC_17f48 
+        /usr/bin/ld: CMakeFiles/cmTC_17f48.dir/CheckFunctionExists.c.o: in function `main':
+        CheckFunctionExists.c:(.text+0x10): undefined reference to `_unlink'
+        collect2: error: ld returned 1 exit status
+        gmake[1]: *** [CMakeFiles/cmTC_17f48.dir/build.make:99: cmTC_17f48] Error 1
+        gmake[1]: Leaving directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-Acmi9P'
+        gmake: *** [Makefile:127: cmTC_17f48/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "CMakeLists.txt:101 (check_function_exists)"
+    checks:
+      - "Looking for arc4random"
+    directories:
+      source: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-K8DMSC"
+      binary: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-K8DMSC"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/cmake"
+    buildResult:
+      variable: "HAVE_ARC4RANDOM"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-K8DMSC'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_0d174/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_0d174.dir/build.make CMakeFiles/cmTC_0d174.dir/build
+        gmake[1]: Entering directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-K8DMSC'
+        Building C object CMakeFiles/cmTC_0d174.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=arc4random -o CMakeFiles/cmTC_0d174.dir/CheckFunctionExists.c.o -c /home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-K8DMSC/CheckFunctionExists.c
+        Linking C executable cmTC_0d174
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0d174.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=arc4random -rdynamic CMakeFiles/cmTC_0d174.dir/CheckFunctionExists.c.o -o cmTC_0d174 
+        gmake[1]: Leaving directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-K8DMSC'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "CMakeLists.txt:102 (check_function_exists)"
+    checks:
+      - "Looking for clonefile"
+    directories:
+      source: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-pjRKV7"
+      binary: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-pjRKV7"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/cmake"
+    buildResult:
+      variable: "HAVE_CLONEFILE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-pjRKV7'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e42c1/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_e42c1.dir/build.make CMakeFiles/cmTC_e42c1.dir/build
+        gmake[1]: Entering directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-pjRKV7'
+        Building C object CMakeFiles/cmTC_e42c1.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=clonefile -o CMakeFiles/cmTC_e42c1.dir/CheckFunctionExists.c.o -c /home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-pjRKV7/CheckFunctionExists.c
+        Linking C executable cmTC_e42c1
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e42c1.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=clonefile -rdynamic CMakeFiles/cmTC_e42c1.dir/CheckFunctionExists.c.o -o cmTC_e42c1 
+        /usr/bin/ld: CMakeFiles/cmTC_e42c1.dir/CheckFunctionExists.c.o: in function `main':
+        CheckFunctionExists.c:(.text+0x10): undefined reference to `clonefile'
+        collect2: error: ld returned 1 exit status
+        gmake[1]: *** [CMakeFiles/cmTC_e42c1.dir/build.make:99: cmTC_e42c1] Error 1
+        gmake[1]: Leaving directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-pjRKV7'
+        gmake: *** [Makefile:127: cmTC_e42c1/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "CMakeLists.txt:103 (check_function_exists)"
+    checks:
+      - "Looking for explicit_bzero"
+    directories:
+      source: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-ae7grT"
+      binary: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-ae7grT"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/cmake"
+    buildResult:
+      variable: "HAVE_EXPLICIT_BZERO"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-ae7grT'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_2cc69/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_2cc69.dir/build.make CMakeFiles/cmTC_2cc69.dir/build
+        gmake[1]: Entering directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-ae7grT'
+        Building C object CMakeFiles/cmTC_2cc69.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=explicit_bzero -o CMakeFiles/cmTC_2cc69.dir/CheckFunctionExists.c.o -c /home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-ae7grT/CheckFunctionExists.c
+        Linking C executable cmTC_2cc69
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2cc69.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=explicit_bzero -rdynamic CMakeFiles/cmTC_2cc69.dir/CheckFunctionExists.c.o -o cmTC_2cc69 
+        gmake[1]: Leaving directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-ae7grT'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "CMakeLists.txt:104 (check_function_exists)"
+    checks:
+      - "Looking for explicit_memset"
+    directories:
+      source: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-5xWADO"
+      binary: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-5xWADO"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/cmake"
+    buildResult:
+      variable: "HAVE_EXPLICIT_MEMSET"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-5xWADO'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_6e626/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_6e626.dir/build.make CMakeFiles/cmTC_6e626.dir/build
+        gmake[1]: Entering directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-5xWADO'
+        Building C object CMakeFiles/cmTC_6e626.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=explicit_memset -o CMakeFiles/cmTC_6e626.dir/CheckFunctionExists.c.o -c /home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-5xWADO/CheckFunctionExists.c
+        Linking C executable cmTC_6e626
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6e626.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=explicit_memset -rdynamic CMakeFiles/cmTC_6e626.dir/CheckFunctionExists.c.o -o cmTC_6e626 
+        /usr/bin/ld: CMakeFiles/cmTC_6e626.dir/CheckFunctionExists.c.o: in function `main':
+        CheckFunctionExists.c:(.text+0x10): undefined reference to `explicit_memset'
+        collect2: error: ld returned 1 exit status
+        gmake[1]: *** [CMakeFiles/cmTC_6e626.dir/build.make:99: cmTC_6e626] Error 1
+        gmake[1]: Leaving directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-5xWADO'
+        gmake: *** [Makefile:127: cmTC_6e626/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "CMakeLists.txt:105 (check_function_exists)"
+    checks:
+      - "Looking for fchmod"
+    directories:
+      source: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-3zIU9i"
+      binary: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-3zIU9i"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/cmake"
+    buildResult:
+      variable: "HAVE_FCHMOD"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-3zIU9i'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_4de31/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_4de31.dir/build.make CMakeFiles/cmTC_4de31.dir/build
+        gmake[1]: Entering directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-3zIU9i'
+        Building C object CMakeFiles/cmTC_4de31.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=fchmod -o CMakeFiles/cmTC_4de31.dir/CheckFunctionExists.c.o -c /home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-3zIU9i/CheckFunctionExists.c
+        Linking C executable cmTC_4de31
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4de31.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=fchmod -rdynamic CMakeFiles/cmTC_4de31.dir/CheckFunctionExists.c.o -o cmTC_4de31 
+        gmake[1]: Leaving directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-3zIU9i'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "CMakeLists.txt:106 (check_function_exists)"
+    checks:
+      - "Looking for fileno"
+    directories:
+      source: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-Yj43XI"
+      binary: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-Yj43XI"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/cmake"
+    buildResult:
+      variable: "HAVE_FILENO"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-Yj43XI'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_17da2/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_17da2.dir/build.make CMakeFiles/cmTC_17da2.dir/build
+        gmake[1]: Entering directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-Yj43XI'
+        Building C object CMakeFiles/cmTC_17da2.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=fileno -o CMakeFiles/cmTC_17da2.dir/CheckFunctionExists.c.o -c /home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-Yj43XI/CheckFunctionExists.c
+        Linking C executable cmTC_17da2
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_17da2.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=fileno -rdynamic CMakeFiles/cmTC_17da2.dir/CheckFunctionExists.c.o -o cmTC_17da2 
+        gmake[1]: Leaving directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-Yj43XI'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "CMakeLists.txt:107 (check_function_exists)"
+    checks:
+      - "Looking for fseeko"
+    directories:
+      source: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-n83sSf"
+      binary: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-n83sSf"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/cmake"
+    buildResult:
+      variable: "HAVE_FSEEKO"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-n83sSf'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_6ac64/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_6ac64.dir/build.make CMakeFiles/cmTC_6ac64.dir/build
+        gmake[1]: Entering directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-n83sSf'
+        Building C object CMakeFiles/cmTC_6ac64.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=fseeko -o CMakeFiles/cmTC_6ac64.dir/CheckFunctionExists.c.o -c /home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-n83sSf/CheckFunctionExists.c
+        Linking C executable cmTC_6ac64
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6ac64.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=fseeko -rdynamic CMakeFiles/cmTC_6ac64.dir/CheckFunctionExists.c.o -o cmTC_6ac64 
+        gmake[1]: Leaving directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-n83sSf'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "CMakeLists.txt:108 (check_function_exists)"
+    checks:
+      - "Looking for ftello"
+    directories:
+      source: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-cGYfaJ"
+      binary: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-cGYfaJ"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/cmake"
+    buildResult:
+      variable: "HAVE_FTELLO"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-cGYfaJ'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ea94e/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_ea94e.dir/build.make CMakeFiles/cmTC_ea94e.dir/build
+        gmake[1]: Entering directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-cGYfaJ'
+        Building C object CMakeFiles/cmTC_ea94e.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=ftello -o CMakeFiles/cmTC_ea94e.dir/CheckFunctionExists.c.o -c /home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-cGYfaJ/CheckFunctionExists.c
+        Linking C executable cmTC_ea94e
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ea94e.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=ftello -rdynamic CMakeFiles/cmTC_ea94e.dir/CheckFunctionExists.c.o -o cmTC_ea94e 
+        gmake[1]: Leaving directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-cGYfaJ'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "CMakeLists.txt:109 (check_function_exists)"
+    checks:
+      - "Looking for getprogname"
+    directories:
+      source: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-W2bIRL"
+      binary: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-W2bIRL"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/cmake"
+    buildResult:
+      variable: "HAVE_GETPROGNAME"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-W2bIRL'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5a5f7/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_5a5f7.dir/build.make CMakeFiles/cmTC_5a5f7.dir/build
+        gmake[1]: Entering directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-W2bIRL'
+        Building C object CMakeFiles/cmTC_5a5f7.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=getprogname -o CMakeFiles/cmTC_5a5f7.dir/CheckFunctionExists.c.o -c /home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-W2bIRL/CheckFunctionExists.c
+        Linking C executable cmTC_5a5f7
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5a5f7.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=getprogname -rdynamic CMakeFiles/cmTC_5a5f7.dir/CheckFunctionExists.c.o -o cmTC_5a5f7 
+        /usr/bin/ld: CMakeFiles/cmTC_5a5f7.dir/CheckFunctionExists.c.o: in function `main':
+        CheckFunctionExists.c:(.text+0x10): undefined reference to `getprogname'
+        collect2: error: ld returned 1 exit status
+        gmake[1]: *** [CMakeFiles/cmTC_5a5f7.dir/build.make:99: cmTC_5a5f7] Error 1
+        gmake[1]: Leaving directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-W2bIRL'
+        gmake: *** [Makefile:127: cmTC_5a5f7/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "CMakeLists.txt:110 (check_function_exists)"
+    checks:
+      - "Looking for localtime_r"
+    directories:
+      source: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-t7F0Ux"
+      binary: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-t7F0Ux"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/cmake"
+    buildResult:
+      variable: "HAVE_LOCALTIME_R"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-t7F0Ux'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d331f/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_d331f.dir/build.make CMakeFiles/cmTC_d331f.dir/build
+        gmake[1]: Entering directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-t7F0Ux'
+        Building C object CMakeFiles/cmTC_d331f.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=localtime_r -o CMakeFiles/cmTC_d331f.dir/CheckFunctionExists.c.o -c /home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-t7F0Ux/CheckFunctionExists.c
+        Linking C executable cmTC_d331f
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d331f.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=localtime_r -rdynamic CMakeFiles/cmTC_d331f.dir/CheckFunctionExists.c.o -o cmTC_d331f 
+        gmake[1]: Leaving directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-t7F0Ux'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "CMakeLists.txt:111 (check_function_exists)"
+    checks:
+      - "Looking for setmode"
+    directories:
+      source: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-GWaeJI"
+      binary: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-GWaeJI"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/cmake"
+    buildResult:
+      variable: "HAVE_SETMODE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-GWaeJI'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_6caec/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_6caec.dir/build.make CMakeFiles/cmTC_6caec.dir/build
+        gmake[1]: Entering directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-GWaeJI'
+        Building C object CMakeFiles/cmTC_6caec.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=setmode -o CMakeFiles/cmTC_6caec.dir/CheckFunctionExists.c.o -c /home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-GWaeJI/CheckFunctionExists.c
+        Linking C executable cmTC_6caec
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6caec.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=setmode -rdynamic CMakeFiles/cmTC_6caec.dir/CheckFunctionExists.c.o -o cmTC_6caec 
+        /usr/bin/ld: CMakeFiles/cmTC_6caec.dir/CheckFunctionExists.c.o: in function `main':
+        CheckFunctionExists.c:(.text+0x10): undefined reference to `setmode'
+        collect2: error: ld returned 1 exit status
+        gmake[1]: *** [CMakeFiles/cmTC_6caec.dir/build.make:99: cmTC_6caec] Error 1
+        gmake[1]: Leaving directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-GWaeJI'
+        gmake: *** [Makefile:127: cmTC_6caec/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "CMakeLists.txt:112 (check_symbol_exists)"
+    checks:
+      - "Looking for snprintf"
+    directories:
+      source: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-H3C9e6"
+      binary: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-H3C9e6"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/cmake"
+    buildResult:
+      variable: "HAVE_SNPRINTF"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-H3C9e6'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_0ae14/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_0ae14.dir/build.make CMakeFiles/cmTC_0ae14.dir/build
+        gmake[1]: Entering directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-H3C9e6'
+        Building C object CMakeFiles/cmTC_0ae14.dir/CheckSymbolExists.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_0ae14.dir/CheckSymbolExists.c.o -c /home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-H3C9e6/CheckSymbolExists.c
+        Linking C executable cmTC_0ae14
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0ae14.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_0ae14.dir/CheckSymbolExists.c.o -o cmTC_0ae14 
+        gmake[1]: Leaving directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-H3C9e6'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "CMakeLists.txt:113 (check_symbol_exists)"
+    checks:
+      - "Looking for strcasecmp"
+    directories:
+      source: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-QPJGXw"
+      binary: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-QPJGXw"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/cmake"
+    buildResult:
+      variable: "HAVE_STRCASECMP"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-QPJGXw'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c737a/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_c737a.dir/build.make CMakeFiles/cmTC_c737a.dir/build
+        gmake[1]: Entering directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-QPJGXw'
+        Building C object CMakeFiles/cmTC_c737a.dir/CheckSymbolExists.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_c737a.dir/CheckSymbolExists.c.o -c /home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-QPJGXw/CheckSymbolExists.c
+        Linking C executable cmTC_c737a
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c737a.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_c737a.dir/CheckSymbolExists.c.o -o cmTC_c737a 
+        gmake[1]: Leaving directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-QPJGXw'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "CMakeLists.txt:114 (check_function_exists)"
+    checks:
+      - "Looking for strdup"
+    directories:
+      source: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-LOrCFN"
+      binary: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-LOrCFN"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/cmake"
+    buildResult:
+      variable: "HAVE_STRDUP"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-LOrCFN'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_469fa/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_469fa.dir/build.make CMakeFiles/cmTC_469fa.dir/build
+        gmake[1]: Entering directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-LOrCFN'
+        Building C object CMakeFiles/cmTC_469fa.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=strdup -o CMakeFiles/cmTC_469fa.dir/CheckFunctionExists.c.o -c /home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-LOrCFN/CheckFunctionExists.c
+        <command-line>: warning: conflicting types for built-in function ‘strdup’; expected ‘char *(const char *)’ [-Wbuiltin-declaration-mismatch]
+        /home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-LOrCFN/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+            7 |   CHECK_FUNCTION_EXISTS(void);
+              |   ^~~~~~~~~~~~~~~~~~~~~
+        Linking C executable cmTC_469fa
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_469fa.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=strdup -rdynamic CMakeFiles/cmTC_469fa.dir/CheckFunctionExists.c.o -o cmTC_469fa 
+        gmake[1]: Leaving directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-LOrCFN'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "CMakeLists.txt:115 (check_function_exists)"
+    checks:
+      - "Looking for stricmp"
+    directories:
+      source: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-LqL3LZ"
+      binary: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-LqL3LZ"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/cmake"
+    buildResult:
+      variable: "HAVE_STRICMP"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-LqL3LZ'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f1971/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_f1971.dir/build.make CMakeFiles/cmTC_f1971.dir/build
+        gmake[1]: Entering directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-LqL3LZ'
+        Building C object CMakeFiles/cmTC_f1971.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=stricmp -o CMakeFiles/cmTC_f1971.dir/CheckFunctionExists.c.o -c /home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-LqL3LZ/CheckFunctionExists.c
+        Linking C executable cmTC_f1971
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f1971.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=stricmp -rdynamic CMakeFiles/cmTC_f1971.dir/CheckFunctionExists.c.o -o cmTC_f1971 
+        /usr/bin/ld: CMakeFiles/cmTC_f1971.dir/CheckFunctionExists.c.o: in function `main':
+        CheckFunctionExists.c:(.text+0x10): undefined reference to `stricmp'
+        collect2: error: ld returned 1 exit status
+        gmake[1]: *** [CMakeFiles/cmTC_f1971.dir/build.make:99: cmTC_f1971] Error 1
+        gmake[1]: Leaving directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-LqL3LZ'
+        gmake: *** [Makefile:127: cmTC_f1971/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "CMakeLists.txt:116 (check_function_exists)"
+    checks:
+      - "Looking for strtoll"
+    directories:
+      source: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-6HahUJ"
+      binary: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-6HahUJ"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/cmake"
+    buildResult:
+      variable: "HAVE_STRTOLL"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-6HahUJ'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_edc98/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_edc98.dir/build.make CMakeFiles/cmTC_edc98.dir/build
+        gmake[1]: Entering directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-6HahUJ'
+        Building C object CMakeFiles/cmTC_edc98.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=strtoll -o CMakeFiles/cmTC_edc98.dir/CheckFunctionExists.c.o -c /home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-6HahUJ/CheckFunctionExists.c
+        Linking C executable cmTC_edc98
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_edc98.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=strtoll -rdynamic CMakeFiles/cmTC_edc98.dir/CheckFunctionExists.c.o -o cmTC_edc98 
+        gmake[1]: Leaving directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-6HahUJ'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "CMakeLists.txt:117 (check_function_exists)"
+    checks:
+      - "Looking for strtoull"
+    directories:
+      source: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-onMhef"
+      binary: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-onMhef"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/cmake"
+    buildResult:
+      variable: "HAVE_STRTOULL"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-onMhef'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_fa17e/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_fa17e.dir/build.make CMakeFiles/cmTC_fa17e.dir/build
+        gmake[1]: Entering directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-onMhef'
+        Building C object CMakeFiles/cmTC_fa17e.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=strtoull -o CMakeFiles/cmTC_fa17e.dir/CheckFunctionExists.c.o -c /home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-onMhef/CheckFunctionExists.c
+        Linking C executable cmTC_fa17e
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fa17e.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=strtoull -rdynamic CMakeFiles/cmTC_fa17e.dir/CheckFunctionExists.c.o -o cmTC_fa17e 
+        gmake[1]: Leaving directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-onMhef'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "CMakeLists.txt:119 (check_include_files)"
+    checks:
+      - "Looking for 3 include files sys/types.h, ..., fts.h"
+    directories:
+      source: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-LFGpXl"
+      binary: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-LFGpXl"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/cmake"
+    buildResult:
+      variable: "HAVE_FTS_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-LFGpXl'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b5213/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_b5213.dir/build.make CMakeFiles/cmTC_b5213.dir/build
+        gmake[1]: Entering directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-LFGpXl'
+        Building C object CMakeFiles/cmTC_b5213.dir/HAVE_FTS_H.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_b5213.dir/HAVE_FTS_H.c.o -c /home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-LFGpXl/HAVE_FTS_H.c
+        Linking C executable cmTC_b5213
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b5213.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_b5213.dir/HAVE_FTS_H.c.o -o cmTC_b5213 
+        gmake[1]: Leaving directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-LFGpXl'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "CMakeLists.txt:122 (check_function_exists)"
+    checks:
+      - "Looking for fts_open"
+    directories:
+      source: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-vy4quo"
+      binary: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-vy4quo"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/cmake"
+    buildResult:
+      variable: "HAVE_FTS_OPEN"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-vy4quo'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_56914/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_56914.dir/build.make CMakeFiles/cmTC_56914.dir/build
+        gmake[1]: Entering directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-vy4quo'
+        Building C object CMakeFiles/cmTC_56914.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=fts_open -o CMakeFiles/cmTC_56914.dir/CheckFunctionExists.c.o -c /home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-vy4quo/CheckFunctionExists.c
+        Linking C executable cmTC_56914
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_56914.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=fts_open -rdynamic CMakeFiles/cmTC_56914.dir/CheckFunctionExists.c.o -o cmTC_56914 
+        gmake[1]: Leaving directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-vy4quo'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "CMakeLists.txt:138 (check_include_files)"
+    checks:
+      - "Looking for include file stdbool.h"
+    directories:
+      source: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-tB80M5"
+      binary: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-tB80M5"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/cmake"
+    buildResult:
+      variable: "HAVE_STDBOOL_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-tB80M5'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e0c8e/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_e0c8e.dir/build.make CMakeFiles/cmTC_e0c8e.dir/build
+        gmake[1]: Entering directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-tB80M5'
+        Building C object CMakeFiles/cmTC_e0c8e.dir/HAVE_STDBOOL_H.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_e0c8e.dir/HAVE_STDBOOL_H.c.o -c /home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-tB80M5/HAVE_STDBOOL_H.c
+        Linking C executable cmTC_e0c8e
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e0c8e.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_e0c8e.dir/HAVE_STDBOOL_H.c.o -o cmTC_e0c8e 
+        gmake[1]: Leaving directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-tB80M5'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "CMakeLists.txt:139 (check_include_files)"
+    checks:
+      - "Looking for include file strings.h"
+    directories:
+      source: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-bVyW7o"
+      binary: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-bVyW7o"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/cmake"
+    buildResult:
+      variable: "HAVE_STRINGS_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-bVyW7o'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_61d7d/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_61d7d.dir/build.make CMakeFiles/cmTC_61d7d.dir/build
+        gmake[1]: Entering directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-bVyW7o'
+        Building C object CMakeFiles/cmTC_61d7d.dir/HAVE_STRINGS_H.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_61d7d.dir/HAVE_STRINGS_H.c.o -c /home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-bVyW7o/HAVE_STRINGS_H.c
+        Linking C executable cmTC_61d7d
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_61d7d.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_61d7d.dir/HAVE_STRINGS_H.c.o -o cmTC_61d7d 
+        gmake[1]: Leaving directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-bVyW7o'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "CMakeLists.txt:140 (check_include_files)"
+    checks:
+      - "Looking for include file unistd.h"
+    directories:
+      source: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-ybMUya"
+      binary: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-ybMUya"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/cmake"
+    buildResult:
+      variable: "HAVE_UNISTD_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-ybMUya'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_905ce/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_905ce.dir/build.make CMakeFiles/cmTC_905ce.dir/build
+        gmake[1]: Entering directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-ybMUya'
+        Building C object CMakeFiles/cmTC_905ce.dir/HAVE_UNISTD_H.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_905ce.dir/HAVE_UNISTD_H.c.o -c /home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-ybMUya/HAVE_UNISTD_H.c
+        Linking C executable cmTC_905ce
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_905ce.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_905ce.dir/HAVE_UNISTD_H.c.o -o cmTC_905ce 
+        gmake[1]: Leaving directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-ybMUya'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "CMakeLists.txt:142 (check_include_files)"
+    checks:
+      - "Looking for include file inttypes.h"
+    directories:
+      source: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-nMi0Fz"
+      binary: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-nMi0Fz"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/cmake"
+    buildResult:
+      variable: "HAVE_INTTYPES_H_LIBZIP"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-nMi0Fz'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_26997/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_26997.dir/build.make CMakeFiles/cmTC_26997.dir/build
+        gmake[1]: Entering directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-nMi0Fz'
+        Building C object CMakeFiles/cmTC_26997.dir/HAVE_INTTYPES_H_LIBZIP.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_26997.dir/HAVE_INTTYPES_H_LIBZIP.c.o -c /home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-nMi0Fz/HAVE_INTTYPES_H_LIBZIP.c
+        Linking C executable cmTC_26997
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_26997.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_26997.dir/HAVE_INTTYPES_H_LIBZIP.c.o -o cmTC_26997 
+        gmake[1]: Leaving directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-nMi0Fz'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "CMakeLists.txt:143 (check_include_files)"
+    checks:
+      - "Looking for include file stdint.h"
+    directories:
+      source: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-E7oLAX"
+      binary: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-E7oLAX"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/cmake"
+    buildResult:
+      variable: "HAVE_STDINT_H_LIBZIP"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-E7oLAX'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a8501/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_a8501.dir/build.make CMakeFiles/cmTC_a8501.dir/build
+        gmake[1]: Entering directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-E7oLAX'
+        Building C object CMakeFiles/cmTC_a8501.dir/HAVE_STDINT_H_LIBZIP.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_a8501.dir/HAVE_STDINT_H_LIBZIP.c.o -c /home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-E7oLAX/HAVE_STDINT_H_LIBZIP.c
+        Linking C executable cmTC_a8501
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a8501.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_a8501.dir/HAVE_STDINT_H_LIBZIP.c.o -o cmTC_a8501 
+        gmake[1]: Leaving directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-E7oLAX'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckIncludeFiles.cmake:132 (try_compile)"
+      - "CMakeLists.txt:144 (check_include_files)"
+    checks:
+      - "Looking for include file sys/types.h"
+    directories:
+      source: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-szaZKj"
+      binary: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-szaZKj"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/cmake"
+    buildResult:
+      variable: "HAVE_SYS_TYPES_H_LIBZIP"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-szaZKj'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_88df1/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_88df1.dir/build.make CMakeFiles/cmTC_88df1.dir/build
+        gmake[1]: Entering directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-szaZKj'
+        Building C object CMakeFiles/cmTC_88df1.dir/HAVE_SYS_TYPES_H_LIBZIP.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_88df1.dir/HAVE_SYS_TYPES_H_LIBZIP.c.o -c /home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-szaZKj/HAVE_SYS_TYPES_H_LIBZIP.c
+        Linking C executable cmTC_88df1
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_88df1.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_88df1.dir/HAVE_SYS_TYPES_H_LIBZIP.c.o -o cmTC_88df1 
+        gmake[1]: Leaving directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-szaZKj'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:250 (check_include_file)"
+      - "CMakeLists.txt:150 (check_type_size)"
+    checks:
+      - "Looking for sys/types.h"
+    directories:
+      source: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-IC2SZf"
+      binary: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-IC2SZf"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/cmake"
+    buildResult:
+      variable: "HAVE_SYS_TYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-IC2SZf'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_07d09/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_07d09.dir/build.make CMakeFiles/cmTC_07d09.dir/build
+        gmake[1]: Entering directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-IC2SZf'
+        Building C object CMakeFiles/cmTC_07d09.dir/CheckIncludeFile.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_07d09.dir/CheckIncludeFile.c.o -c /home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-IC2SZf/CheckIncludeFile.c
+        Linking C executable cmTC_07d09
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_07d09.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_07d09.dir/CheckIncludeFile.c.o -o cmTC_07d09 
+        gmake[1]: Leaving directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-IC2SZf'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:251 (check_include_file)"
+      - "CMakeLists.txt:150 (check_type_size)"
+    checks:
+      - "Looking for stdint.h"
+    directories:
+      source: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-KHgm3w"
+      binary: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-KHgm3w"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/cmake"
+    buildResult:
+      variable: "HAVE_STDINT_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-KHgm3w'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_3868f/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_3868f.dir/build.make CMakeFiles/cmTC_3868f.dir/build
+        gmake[1]: Entering directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-KHgm3w'
+        Building C object CMakeFiles/cmTC_3868f.dir/CheckIncludeFile.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_3868f.dir/CheckIncludeFile.c.o -c /home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-KHgm3w/CheckIncludeFile.c
+        Linking C executable cmTC_3868f
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3868f.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_3868f.dir/CheckIncludeFile.c.o -o cmTC_3868f 
+        gmake[1]: Leaving directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-KHgm3w'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:252 (check_include_file)"
+      - "CMakeLists.txt:150 (check_type_size)"
+    checks:
+      - "Looking for stddef.h"
+    directories:
+      source: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-8kANZx"
+      binary: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-8kANZx"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/cmake"
+    buildResult:
+      variable: "HAVE_STDDEF_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-8kANZx'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_cc59d/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_cc59d.dir/build.make CMakeFiles/cmTC_cc59d.dir/build
+        gmake[1]: Entering directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-8kANZx'
+        Building C object CMakeFiles/cmTC_cc59d.dir/CheckIncludeFile.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_cc59d.dir/CheckIncludeFile.c.o -c /home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-8kANZx/CheckIncludeFile.c
+        Linking C executable cmTC_cc59d
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cc59d.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_cc59d.dir/CheckIncludeFile.c.o -o cmTC_cc59d 
+        gmake[1]: Leaving directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-8kANZx'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:146 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:271 (__check_type_size_impl)"
+      - "CMakeLists.txt:150 (check_type_size)"
+    checks:
+      - "Check size of __int8"
+    directories:
+      source: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-aqhIin"
+      binary: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-aqhIin"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/cmake"
+    buildResult:
+      variable: "HAVE___INT8_LIBZIP"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-aqhIin'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_db2b7/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_db2b7.dir/build.make CMakeFiles/cmTC_db2b7.dir/build
+        gmake[1]: Entering directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-aqhIin'
+        Building C object CMakeFiles/cmTC_db2b7.dir/__INT8_LIBZIP.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_db2b7.dir/__INT8_LIBZIP.c.o -c /home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-aqhIin/__INT8_LIBZIP.c
+        /home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-aqhIin/__INT8_LIBZIP.c:27:22: error: ‘__int8’ undeclared here (not in a function); did you mean ‘u_int’?
+           27 | #define SIZE (sizeof(__int8))
+              |                      ^~~~~~
+        /home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-aqhIin/__INT8_LIBZIP.c:29:12: note: in expansion of macro ‘SIZE’
+           29 |   ('0' + ((SIZE / 10000)%10)),
+              |            ^~~~
+        gmake[1]: *** [CMakeFiles/cmTC_db2b7.dir/build.make:78: CMakeFiles/cmTC_db2b7.dir/__INT8_LIBZIP.c.o] Error 1
+        gmake[1]: Leaving directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-aqhIin'
+        gmake: *** [Makefile:127: cmTC_db2b7/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:146 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:271 (__check_type_size_impl)"
+      - "CMakeLists.txt:151 (check_type_size)"
+    checks:
+      - "Check size of int8_t"
+    directories:
+      source: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-8Z4Q1O"
+      binary: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-8Z4Q1O"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/cmake"
+    buildResult:
+      variable: "HAVE_INT8_T_LIBZIP"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-8Z4Q1O'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_4373d/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_4373d.dir/build.make CMakeFiles/cmTC_4373d.dir/build
+        gmake[1]: Entering directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-8Z4Q1O'
+        Building C object CMakeFiles/cmTC_4373d.dir/INT8_T_LIBZIP.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_4373d.dir/INT8_T_LIBZIP.c.o -c /home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-8Z4Q1O/INT8_T_LIBZIP.c
+        Linking C executable cmTC_4373d
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4373d.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_4373d.dir/INT8_T_LIBZIP.c.o -o cmTC_4373d 
+        gmake[1]: Leaving directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-8Z4Q1O'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:146 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:271 (__check_type_size_impl)"
+      - "CMakeLists.txt:152 (check_type_size)"
+    checks:
+      - "Check size of uint8_t"
+    directories:
+      source: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-i1XGms"
+      binary: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-i1XGms"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/cmake"
+    buildResult:
+      variable: "HAVE_UINT8_T_LIBZIP"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-i1XGms'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d5794/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_d5794.dir/build.make CMakeFiles/cmTC_d5794.dir/build
+        gmake[1]: Entering directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-i1XGms'
+        Building C object CMakeFiles/cmTC_d5794.dir/UINT8_T_LIBZIP.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_d5794.dir/UINT8_T_LIBZIP.c.o -c /home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-i1XGms/UINT8_T_LIBZIP.c
+        Linking C executable cmTC_d5794
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d5794.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_d5794.dir/UINT8_T_LIBZIP.c.o -o cmTC_d5794 
+        gmake[1]: Leaving directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-i1XGms'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:146 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:271 (__check_type_size_impl)"
+      - "CMakeLists.txt:153 (check_type_size)"
+    checks:
+      - "Check size of __int16"
+    directories:
+      source: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-fhP7cj"
+      binary: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-fhP7cj"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/cmake"
+    buildResult:
+      variable: "HAVE___INT16_LIBZIP"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-fhP7cj'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_eab1a/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_eab1a.dir/build.make CMakeFiles/cmTC_eab1a.dir/build
+        gmake[1]: Entering directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-fhP7cj'
+        Building C object CMakeFiles/cmTC_eab1a.dir/__INT16_LIBZIP.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_eab1a.dir/__INT16_LIBZIP.c.o -c /home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-fhP7cj/__INT16_LIBZIP.c
+        /home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-fhP7cj/__INT16_LIBZIP.c:27:22: error: ‘__int16’ undeclared here (not in a function); did you mean ‘__int16_t’?
+           27 | #define SIZE (sizeof(__int16))
+              |                      ^~~~~~~
+        /home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-fhP7cj/__INT16_LIBZIP.c:29:12: note: in expansion of macro ‘SIZE’
+           29 |   ('0' + ((SIZE / 10000)%10)),
+              |            ^~~~
+        gmake[1]: *** [CMakeFiles/cmTC_eab1a.dir/build.make:78: CMakeFiles/cmTC_eab1a.dir/__INT16_LIBZIP.c.o] Error 1
+        gmake[1]: Leaving directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-fhP7cj'
+        gmake: *** [Makefile:127: cmTC_eab1a/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:146 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:271 (__check_type_size_impl)"
+      - "CMakeLists.txt:154 (check_type_size)"
+    checks:
+      - "Check size of int16_t"
+    directories:
+      source: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-EfYN5v"
+      binary: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-EfYN5v"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/cmake"
+    buildResult:
+      variable: "HAVE_INT16_T_LIBZIP"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-EfYN5v'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_9b83d/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_9b83d.dir/build.make CMakeFiles/cmTC_9b83d.dir/build
+        gmake[1]: Entering directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-EfYN5v'
+        Building C object CMakeFiles/cmTC_9b83d.dir/INT16_T_LIBZIP.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_9b83d.dir/INT16_T_LIBZIP.c.o -c /home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-EfYN5v/INT16_T_LIBZIP.c
+        Linking C executable cmTC_9b83d
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9b83d.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_9b83d.dir/INT16_T_LIBZIP.c.o -o cmTC_9b83d 
+        gmake[1]: Leaving directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-EfYN5v'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:146 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:271 (__check_type_size_impl)"
+      - "CMakeLists.txt:155 (check_type_size)"
+    checks:
+      - "Check size of uint16_t"
+    directories:
+      source: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-Yz2wgc"
+      binary: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-Yz2wgc"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/cmake"
+    buildResult:
+      variable: "HAVE_UINT16_T_LIBZIP"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-Yz2wgc'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_2f93a/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_2f93a.dir/build.make CMakeFiles/cmTC_2f93a.dir/build
+        gmake[1]: Entering directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-Yz2wgc'
+        Building C object CMakeFiles/cmTC_2f93a.dir/UINT16_T_LIBZIP.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_2f93a.dir/UINT16_T_LIBZIP.c.o -c /home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-Yz2wgc/UINT16_T_LIBZIP.c
+        Linking C executable cmTC_2f93a
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2f93a.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_2f93a.dir/UINT16_T_LIBZIP.c.o -o cmTC_2f93a 
+        gmake[1]: Leaving directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-Yz2wgc'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:146 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:271 (__check_type_size_impl)"
+      - "CMakeLists.txt:156 (check_type_size)"
+    checks:
+      - "Check size of __int32"
+    directories:
+      source: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-Wm3I7C"
+      binary: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-Wm3I7C"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/cmake"
+    buildResult:
+      variable: "HAVE___INT32_LIBZIP"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-Wm3I7C'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ab4ee/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_ab4ee.dir/build.make CMakeFiles/cmTC_ab4ee.dir/build
+        gmake[1]: Entering directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-Wm3I7C'
+        Building C object CMakeFiles/cmTC_ab4ee.dir/__INT32_LIBZIP.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_ab4ee.dir/__INT32_LIBZIP.c.o -c /home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-Wm3I7C/__INT32_LIBZIP.c
+        /home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-Wm3I7C/__INT32_LIBZIP.c:27:22: error: ‘__int32’ undeclared here (not in a function); did you mean ‘__int32_t’?
+           27 | #define SIZE (sizeof(__int32))
+              |                      ^~~~~~~
+        /home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-Wm3I7C/__INT32_LIBZIP.c:29:12: note: in expansion of macro ‘SIZE’
+           29 |   ('0' + ((SIZE / 10000)%10)),
+              |            ^~~~
+        gmake[1]: *** [CMakeFiles/cmTC_ab4ee.dir/build.make:78: CMakeFiles/cmTC_ab4ee.dir/__INT32_LIBZIP.c.o] Error 1
+        gmake[1]: Leaving directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-Wm3I7C'
+        gmake: *** [Makefile:127: cmTC_ab4ee/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:146 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:271 (__check_type_size_impl)"
+      - "CMakeLists.txt:157 (check_type_size)"
+    checks:
+      - "Check size of int32_t"
+    directories:
+      source: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-iNL0SR"
+      binary: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-iNL0SR"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/cmake"
+    buildResult:
+      variable: "HAVE_INT32_T_LIBZIP"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-iNL0SR'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c93c8/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_c93c8.dir/build.make CMakeFiles/cmTC_c93c8.dir/build
+        gmake[1]: Entering directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-iNL0SR'
+        Building C object CMakeFiles/cmTC_c93c8.dir/INT32_T_LIBZIP.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_c93c8.dir/INT32_T_LIBZIP.c.o -c /home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-iNL0SR/INT32_T_LIBZIP.c
+        Linking C executable cmTC_c93c8
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c93c8.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_c93c8.dir/INT32_T_LIBZIP.c.o -o cmTC_c93c8 
+        gmake[1]: Leaving directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-iNL0SR'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:146 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:271 (__check_type_size_impl)"
+      - "CMakeLists.txt:158 (check_type_size)"
+    checks:
+      - "Check size of uint32_t"
+    directories:
+      source: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-iguY7X"
+      binary: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-iguY7X"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/cmake"
+    buildResult:
+      variable: "HAVE_UINT32_T_LIBZIP"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-iguY7X'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_be148/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_be148.dir/build.make CMakeFiles/cmTC_be148.dir/build
+        gmake[1]: Entering directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-iguY7X'
+        Building C object CMakeFiles/cmTC_be148.dir/UINT32_T_LIBZIP.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_be148.dir/UINT32_T_LIBZIP.c.o -c /home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-iguY7X/UINT32_T_LIBZIP.c
+        Linking C executable cmTC_be148
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_be148.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_be148.dir/UINT32_T_LIBZIP.c.o -o cmTC_be148 
+        gmake[1]: Leaving directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-iguY7X'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:146 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:271 (__check_type_size_impl)"
+      - "CMakeLists.txt:159 (check_type_size)"
+    checks:
+      - "Check size of __int64"
+    directories:
+      source: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-ZURIu5"
+      binary: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-ZURIu5"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/cmake"
+    buildResult:
+      variable: "HAVE___INT64_LIBZIP"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-ZURIu5'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8c373/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_8c373.dir/build.make CMakeFiles/cmTC_8c373.dir/build
+        gmake[1]: Entering directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-ZURIu5'
+        Building C object CMakeFiles/cmTC_8c373.dir/__INT64_LIBZIP.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_8c373.dir/__INT64_LIBZIP.c.o -c /home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-ZURIu5/__INT64_LIBZIP.c
+        /home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-ZURIu5/__INT64_LIBZIP.c:27:22: error: ‘__int64’ undeclared here (not in a function); did you mean ‘__int64_t’?
+           27 | #define SIZE (sizeof(__int64))
+              |                      ^~~~~~~
+        /home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-ZURIu5/__INT64_LIBZIP.c:29:12: note: in expansion of macro ‘SIZE’
+           29 |   ('0' + ((SIZE / 10000)%10)),
+              |            ^~~~
+        gmake[1]: *** [CMakeFiles/cmTC_8c373.dir/build.make:78: CMakeFiles/cmTC_8c373.dir/__INT64_LIBZIP.c.o] Error 1
+        gmake[1]: Leaving directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-ZURIu5'
+        gmake: *** [Makefile:127: cmTC_8c373/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:146 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:271 (__check_type_size_impl)"
+      - "CMakeLists.txt:160 (check_type_size)"
+    checks:
+      - "Check size of int64_t"
+    directories:
+      source: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-9ug3Nj"
+      binary: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-9ug3Nj"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/cmake"
+    buildResult:
+      variable: "HAVE_INT64_T_LIBZIP"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-9ug3Nj'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_aac45/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_aac45.dir/build.make CMakeFiles/cmTC_aac45.dir/build
+        gmake[1]: Entering directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-9ug3Nj'
+        Building C object CMakeFiles/cmTC_aac45.dir/INT64_T_LIBZIP.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_aac45.dir/INT64_T_LIBZIP.c.o -c /home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-9ug3Nj/INT64_T_LIBZIP.c
+        Linking C executable cmTC_aac45
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_aac45.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_aac45.dir/INT64_T_LIBZIP.c.o -o cmTC_aac45 
+        gmake[1]: Leaving directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-9ug3Nj'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:146 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:271 (__check_type_size_impl)"
+      - "CMakeLists.txt:161 (check_type_size)"
+    checks:
+      - "Check size of uint64_t"
+    directories:
+      source: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-CNoztx"
+      binary: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-CNoztx"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/cmake"
+    buildResult:
+      variable: "HAVE_UINT64_T_LIBZIP"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-CNoztx'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_dcbe7/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_dcbe7.dir/build.make CMakeFiles/cmTC_dcbe7.dir/build
+        gmake[1]: Entering directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-CNoztx'
+        Building C object CMakeFiles/cmTC_dcbe7.dir/UINT64_T_LIBZIP.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_dcbe7.dir/UINT64_T_LIBZIP.c.o -c /home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-CNoztx/UINT64_T_LIBZIP.c
+        Linking C executable cmTC_dcbe7
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dcbe7.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_dcbe7.dir/UINT64_T_LIBZIP.c.o -o cmTC_dcbe7 
+        gmake[1]: Leaving directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-CNoztx'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:146 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:271 (__check_type_size_impl)"
+      - "CMakeLists.txt:162 (check_type_size)"
+    checks:
+      - "Check size of short"
+    directories:
+      source: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-6uS8Bq"
+      binary: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-6uS8Bq"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/cmake"
+    buildResult:
+      variable: "HAVE_SHORT_LIBZIP"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-6uS8Bq'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_36eb6/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_36eb6.dir/build.make CMakeFiles/cmTC_36eb6.dir/build
+        gmake[1]: Entering directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-6uS8Bq'
+        Building C object CMakeFiles/cmTC_36eb6.dir/SHORT_LIBZIP.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_36eb6.dir/SHORT_LIBZIP.c.o -c /home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-6uS8Bq/SHORT_LIBZIP.c
+        Linking C executable cmTC_36eb6
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_36eb6.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_36eb6.dir/SHORT_LIBZIP.c.o -o cmTC_36eb6 
+        gmake[1]: Leaving directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-6uS8Bq'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:146 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:271 (__check_type_size_impl)"
+      - "CMakeLists.txt:163 (check_type_size)"
+    checks:
+      - "Check size of int"
+    directories:
+      source: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-tdzHeD"
+      binary: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-tdzHeD"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/cmake"
+    buildResult:
+      variable: "HAVE_INT_LIBZIP"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-tdzHeD'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_63d9e/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_63d9e.dir/build.make CMakeFiles/cmTC_63d9e.dir/build
+        gmake[1]: Entering directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-tdzHeD'
+        Building C object CMakeFiles/cmTC_63d9e.dir/INT_LIBZIP.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_63d9e.dir/INT_LIBZIP.c.o -c /home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-tdzHeD/INT_LIBZIP.c
+        Linking C executable cmTC_63d9e
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_63d9e.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_63d9e.dir/INT_LIBZIP.c.o -o cmTC_63d9e 
+        gmake[1]: Leaving directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-tdzHeD'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:146 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:271 (__check_type_size_impl)"
+      - "CMakeLists.txt:164 (check_type_size)"
+    checks:
+      - "Check size of long"
+    directories:
+      source: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-w5aiTb"
+      binary: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-w5aiTb"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/cmake"
+    buildResult:
+      variable: "HAVE_LONG_LIBZIP"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-w5aiTb'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_0bedb/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_0bedb.dir/build.make CMakeFiles/cmTC_0bedb.dir/build
+        gmake[1]: Entering directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-w5aiTb'
+        Building C object CMakeFiles/cmTC_0bedb.dir/LONG_LIBZIP.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_0bedb.dir/LONG_LIBZIP.c.o -c /home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-w5aiTb/LONG_LIBZIP.c
+        Linking C executable cmTC_0bedb
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0bedb.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_0bedb.dir/LONG_LIBZIP.c.o -o cmTC_0bedb 
+        gmake[1]: Leaving directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-w5aiTb'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:146 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:271 (__check_type_size_impl)"
+      - "CMakeLists.txt:165 (check_type_size)"
+    checks:
+      - "Check size of long long"
+    directories:
+      source: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-z0XJKE"
+      binary: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-z0XJKE"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/cmake"
+    buildResult:
+      variable: "HAVE_LONG_LONG_LIBZIP"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-z0XJKE'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_6a1cf/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_6a1cf.dir/build.make CMakeFiles/cmTC_6a1cf.dir/build
+        gmake[1]: Entering directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-z0XJKE'
+        Building C object CMakeFiles/cmTC_6a1cf.dir/LONG_LONG_LIBZIP.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_6a1cf.dir/LONG_LONG_LIBZIP.c.o -c /home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-z0XJKE/LONG_LONG_LIBZIP.c
+        Linking C executable cmTC_6a1cf
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6a1cf.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_6a1cf.dir/LONG_LONG_LIBZIP.c.o -o cmTC_6a1cf 
+        gmake[1]: Leaving directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-z0XJKE'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:146 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:271 (__check_type_size_impl)"
+      - "CMakeLists.txt:166 (check_type_size)"
+    checks:
+      - "Check size of off_t"
+    directories:
+      source: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-T5SMgq"
+      binary: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-T5SMgq"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/cmake"
+    buildResult:
+      variable: "HAVE_SIZEOF_OFF_T"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-T5SMgq'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_3f140/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_3f140.dir/build.make CMakeFiles/cmTC_3f140.dir/build
+        gmake[1]: Entering directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-T5SMgq'
+        Building C object CMakeFiles/cmTC_3f140.dir/SIZEOF_OFF_T.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_3f140.dir/SIZEOF_OFF_T.c.o -c /home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-T5SMgq/SIZEOF_OFF_T.c
+        Linking C executable cmTC_3f140
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3f140.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_3f140.dir/SIZEOF_OFF_T.c.o -o cmTC_3f140 
+        gmake[1]: Leaving directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-T5SMgq'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:146 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckTypeSize.cmake:271 (__check_type_size_impl)"
+      - "CMakeLists.txt:167 (check_type_size)"
+    checks:
+      - "Check size of size_t"
+    directories:
+      source: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-rodRd1"
+      binary: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-rodRd1"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/cmake"
+    buildResult:
+      variable: "HAVE_SIZEOF_SIZE_T"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-rodRd1'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e002d/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_e002d.dir/build.make CMakeFiles/cmTC_e002d.dir/build
+        gmake[1]: Entering directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-rodRd1'
+        Building C object CMakeFiles/cmTC_e002d.dir/SIZEOF_SIZE_T.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_e002d.dir/SIZEOF_SIZE_T.c.o -c /home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-rodRd1/SIZEOF_SIZE_T.c
+        Linking C executable cmTC_e002d
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e002d.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_e002d.dir/SIZEOF_SIZE_T.c.o -o cmTC_e002d 
+        gmake[1]: Leaving directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-rodRd1'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "CMakeLists.txt:169 (check_c_source_compiles)"
+    checks:
+      - "Performing Test HAVE_FICLONERANGE"
+    directories:
+      source: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-ubnBw6"
+      binary: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-ubnBw6"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/cmake"
+    buildResult:
+      variable: "HAVE_FICLONERANGE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-ubnBw6'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_06e60/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_06e60.dir/build.make CMakeFiles/cmTC_06e60.dir/build
+        gmake[1]: Entering directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-ubnBw6'
+        Building C object CMakeFiles/cmTC_06e60.dir/src.c.o
+        /usr/bin/cc -DHAVE_FICLONERANGE   -o CMakeFiles/cmTC_06e60.dir/src.c.o -c /home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-ubnBw6/src.c
+        Linking C executable cmTC_06e60
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_06e60.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_06e60.dir/src.c.o -o cmTC_06e60 
+        gmake[1]: Leaving directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-ubnBw6'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "CMakeLists.txt:173 (check_c_source_compiles)"
+    checks:
+      - "Performing Test HAVE_NULLABLE"
+    directories:
+      source: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-c664AQ"
+      binary: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-c664AQ"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/cmake"
+    buildResult:
+      variable: "HAVE_NULLABLE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-c664AQ'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_72536/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_72536.dir/build.make CMakeFiles/cmTC_72536.dir/build
+        gmake[1]: Entering directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-c664AQ'
+        Building C object CMakeFiles/cmTC_72536.dir/src.c.o
+        /usr/bin/cc -DHAVE_NULLABLE   -o CMakeFiles/cmTC_72536.dir/src.c.o -c /home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-c664AQ/src.c
+        /home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-c664AQ/src.c:2:26: error: expected ‘;’, ‘,’ or ‘)’ before ‘bar’
+            2 | int foo(char * _Nullable bar);
+              |                          ^~~
+        gmake[1]: *** [CMakeFiles/cmTC_72536.dir/build.make:78: CMakeFiles/cmTC_72536.dir/src.c.o] Error 1
+        gmake[1]: Leaving directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-c664AQ'
+        gmake: *** [Makefile:127: cmTC_72536/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "src/CMakeLists.txt:1 (check_function_exists)"
+    checks:
+      - "Looking for getopt"
+    directories:
+      source: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-Y7rz63"
+      binary: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-Y7rz63"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/cmake"
+    buildResult:
+      variable: "HAVE_GETOPT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-Y7rz63'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_167e7/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_167e7.dir/build.make CMakeFiles/cmTC_167e7.dir/build
+        gmake[1]: Entering directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-Y7rz63'
+        Building C object CMakeFiles/cmTC_167e7.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=getopt -o CMakeFiles/cmTC_167e7.dir/CheckFunctionExists.c.o -c /home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-Y7rz63/CheckFunctionExists.c
+        Linking C executable cmTC_167e7
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_167e7.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=getopt -rdynamic CMakeFiles/cmTC_167e7.dir/CheckFunctionExists.c.o -o cmTC_167e7 
+        gmake[1]: Leaving directory '/home/kali/projects/file-transfer/libzip-src/libzip-1.9.2/build/CMakeFiles/CMakeScratch/TryCompile-Y7rz63'
+        
+      exitCode: 0
+...
