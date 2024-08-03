@@ -23,7 +23,7 @@ const string LOCAL_PRIVATE_KEY_PATH = "/home/kali/.ssh/id_rsa";
 const string ZIP_PASSPHRASE = "zip_archive_passphrase";
 const string LOCAL_PATH = "/tmp/local/";
 const string LOCAL_ZIP_PATH = "/tmp/local/local_zip.zip";
-const int CHECK_INTERVAL = 10;
+const int CHECK_INTERVAL = 5;
 
 // Debug flag
 bool debug_mode = false;
@@ -119,7 +119,7 @@ bool list_new_files(sftp_session sftp, const string &path, time_t last_run, vect
 bool create_zip_from_files(const vector<string> &files, const string &zip_path, const string &password)
 {
     int error;
-    zip_t *archive = zip_open(zip_path.c_str(), ZIP_CREATE | ZIP_TRUNCATE, &error);
+    zip_t *archive = zip_open(zip_path.c_str(), ZIP_CREATE, &error);
     if (!archive)
     {
         cerr << "Error creating ZIP archive: " << zip_strerror(archive) << endl;
@@ -129,7 +129,7 @@ bool create_zip_from_files(const vector<string> &files, const string &zip_path, 
     for (const auto &file : files)
     {
         zip_source_t *source = zip_source_file(archive, file.c_str(), 0, 0);
-        if (!source)
+        if (source == NULL)
         {
             cerr << "Error adding file to ZIP archive: " << zip_strerror(archive) << endl;
             zip_close(archive);
@@ -138,12 +138,6 @@ bool create_zip_from_files(const vector<string> &files, const string &zip_path, 
         string filename = file.substr(file.find_last_of("/") + 1);
         zip_file_add(archive, filename.c_str(), source, ZIP_FL_ENC_UTF_8);
         zip_file_set_encryption(archive, zip_name_locate(archive, filename.c_str(), ZIP_FL_ENC_UTF_8), ZIP_EM_AES_256, password.c_str());
-    }
-
-    if (!password.empty())
-    {
-        debugprint("Setting passphrase on archive.");
-        zip_file_set_encryption(archive, 0, ZIP_EM_AES_256, password.c_str());
     }
 
     if (zip_close(archive) < 0)
@@ -341,14 +335,14 @@ int main(int argc, char **argv)
                         debugprint("Transferred archive to RemoteHost2.");
 
                         // Delete the archive from LocalHost
-                        if (delete_local_file(LOCAL_ZIP_PATH))
-                        {
-                            debugprint("Deleted local archive file.");
-                        }
-                        else
-                        {
-                            cerr << "Failed to delete local archive file." << endl;
-                        }
+                        // if (delete_local_file(LOCAL_ZIP_PATH))
+                        // {
+                        //     debugprint("Deleted local archive file.");
+                        // }
+                        // else
+                        // {
+                        //     cerr << "Failed to delete local archive file." << endl;
+                        // }
                     }
                     else
                     {
