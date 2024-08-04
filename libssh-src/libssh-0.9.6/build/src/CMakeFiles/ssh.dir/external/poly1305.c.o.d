@@ -1,7 +1,7 @@
 src/CMakeFiles/ssh.dir/external/poly1305.c.o: \
- /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/src/external/poly1305.c \
+ /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/src/external/poly1305.c \
  /usr/include/stdc-predef.h \
- /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/config.h \
+ /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/config.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -39,4 +39,4 @@ src/CMakeFiles/ssh.dir/external/poly1305.c.o: \
  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
- /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/include/libssh/poly1305.h
+ /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/include/libssh/poly1305.h

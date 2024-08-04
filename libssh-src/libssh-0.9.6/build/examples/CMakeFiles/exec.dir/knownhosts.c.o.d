@@ -1,7 +1,7 @@
 examples/CMakeFiles/exec.dir/knownhosts.c.o: \
- /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/examples/knownhosts.c \
+ /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/examples/knownhosts.c \
  /usr/include/stdc-predef.h \
- /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/config.h \
+ /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/config.h \
  /usr/include/errno.h /usr/include/features.h \
  /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -57,7 +57,7 @@ examples/CMakeFiles/exec.dir/knownhosts.c.o: \
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
  /usr/include/strings.h \
- /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/include/libssh/priv.h \
+ /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/include/libssh/priv.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
@@ -84,10 +84,10 @@ examples/CMakeFiles/exec.dir/knownhosts.c.o: \
  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
- /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/include/libssh/libssh.h \
- /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/include/libssh/libssh_version.h \
+ /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/include/libssh/libssh.h \
+ /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/include/libssh/libssh_version.h \
  /usr/include/inttypes.h /usr/include/netdb.h /usr/include/rpc/netdb.h \
  /usr/include/x86_64-linux-gnu/bits/netdb.h \
- /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/include/libssh/legacy.h \
- /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/include/libssh/callbacks.h \
- /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/examples/examples_common.h
+ /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/include/libssh/legacy.h \
+ /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/include/libssh/callbacks.h \
+ /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/examples/examples_common.h

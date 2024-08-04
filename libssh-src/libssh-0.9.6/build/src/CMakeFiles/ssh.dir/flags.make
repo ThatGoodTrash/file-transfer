@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = 
 
-C_INCLUDES = -I/home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/src -I/home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/src -I/home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/include -I/home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/include -I/home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build
+C_INCLUDES = -I/home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/src -I/home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/src -I/home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/include -I/home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/include -I/home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build
 
 C_FLAGS = -fPIC -fvisibility=hidden -std=gnu99 -Wpedantic -Wall -Wshadow -Wmissing-prototypes -Wcast-align -Werror=address -Wstrict-prototypes -Werror=strict-prototypes -Wwrite-strings -Werror=write-strings -Werror-implicit-function-declaration -Wpointer-arith -Werror=pointer-arith -Wdeclaration-after-statement -Werror=declaration-after-statement -Wreturn-type -Werror=return-type -Wuninitialized -Werror=uninitialized -Wimplicit-fallthrough -Werror=strict-overflow -Wstrict-overflow=2 -Wno-format-zero-length -Wmissing-field-initializers -Wsign-compare -Wformat -Wformat-security -Werror=format-security -fno-common -fstack-protector-strong -fstack-clash-protection -D_GNU_SOURCE
 

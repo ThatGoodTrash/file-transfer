@@ -1,7 +1,7 @@
 src/CMakeFiles/ssh.dir/bignum.c.o: \
- /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/src/bignum.c \
+ /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/src/bignum.c \
  /usr/include/stdc-predef.h \
- /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/config.h \
+ /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/config.h \
  /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -26,7 +26,7 @@ src/CMakeFiles/ssh.dir/bignum.c.o: \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
  /usr/include/x86_64-linux-gnu/bits/floatn.h \
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
- /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/include/libssh/priv.h \
+ /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/include/libssh/priv.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
@@ -82,17 +82,17 @@ src/CMakeFiles/ssh.dir/bignum.c.o: \
  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
  /usr/include/linux/close_range.h \
- /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/include/libssh/libssh.h \
- /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/include/libssh/libssh_version.h \
+ /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/include/libssh/libssh.h \
+ /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/include/libssh/libssh_version.h \
  /usr/include/inttypes.h /usr/include/netdb.h /usr/include/rpc/netdb.h \
  /usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h \
  /usr/include/x86_64-linux-gnu/bits/netdb.h \
- /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/include/libssh/legacy.h \
- /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/include/libssh/callbacks.h \
- /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/include/libssh/bignum.h \
- /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/include/libssh/libcrypto.h \
- /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/include/libssh/config.h \
+ /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/include/libssh/legacy.h \
+ /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/include/libssh/callbacks.h \
+ /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/include/libssh/bignum.h \
+ /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/include/libssh/libcrypto.h \
+ /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/include/libssh/config.h \
  /usr/include/openssl/dsa.h /usr/include/openssl/macros.h \
  /usr/include/x86_64-linux-gnu/openssl/opensslconf.h \
  /usr/include/x86_64-linux-gnu/openssl/configuration.h \
@@ -131,6 +131,6 @@ src/CMakeFiles/ssh.dir/bignum.c.o: \
  /usr/include/openssl/evperr.h /usr/include/openssl/params.h \
  /usr/include/openssl/objects.h /usr/include/openssl/obj_mac.h \
  /usr/include/openssl/objectserr.h \
- /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/include/libssh/libgcrypt.h \
- /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/include/libssh/libmbedcrypto.h \
- /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/include/libssh/string.h
+ /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/include/libssh/libgcrypt.h \
+ /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/include/libssh/libmbedcrypto.h \
+ /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/include/libssh/string.h

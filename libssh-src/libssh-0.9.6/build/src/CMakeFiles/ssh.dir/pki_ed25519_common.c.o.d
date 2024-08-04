@@ -1,9 +1,9 @@
 src/CMakeFiles/ssh.dir/pki_ed25519_common.c.o: \
- /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/src/pki_ed25519_common.c \
+ /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/src/pki_ed25519_common.c \
  /usr/include/stdc-predef.h \
- /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/config.h \
- /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/include/libssh/pki.h \
- /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/include/libssh/priv.h \
+ /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/config.h \
+ /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/include/libssh/pki.h \
+ /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/include/libssh/priv.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -73,14 +73,14 @@ src/CMakeFiles/ssh.dir/pki_ed25519_common.c.o: \
  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
  /usr/include/linux/close_range.h \
- /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/include/libssh/libssh.h \
- /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/include/libssh/libssh_version.h \
+ /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/include/libssh/libssh.h \
+ /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/include/libssh/libssh_version.h \
  /usr/include/inttypes.h /usr/include/netdb.h /usr/include/rpc/netdb.h \
  /usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h \
  /usr/include/x86_64-linux-gnu/bits/netdb.h \
- /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/include/libssh/legacy.h \
- /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/include/libssh/callbacks.h \
+ /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/include/libssh/legacy.h \
+ /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/include/libssh/callbacks.h \
  /usr/include/openssl/ec.h /usr/include/openssl/macros.h \
  /usr/include/x86_64-linux-gnu/openssl/opensslconf.h \
  /usr/include/x86_64-linux-gnu/openssl/configuration.h \
@@ -123,10 +123,10 @@ src/CMakeFiles/ssh.dir/pki_ed25519_common.c.o: \
  /usr/include/openssl/bn.h /usr/include/openssl/bnerr.h \
  /usr/include/openssl/ecerr.h /usr/include/openssl/params.h \
  /usr/include/openssl/ecdsa.h \
- /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/include/libssh/crypto.h \
- /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/include/libssh/config.h \
- /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/include/libssh/wrapper.h \
- /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/include/libssh/libcrypto.h \
+ /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/include/libssh/crypto.h \
+ /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/include/libssh/config.h \
+ /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/include/libssh/wrapper.h \
+ /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/include/libssh/libcrypto.h \
  /usr/include/openssl/dsa.h /usr/include/openssl/dh.h \
  /usr/include/openssl/dherr.h /usr/include/openssl/dsaerr.h \
  /usr/include/openssl/rsa.h /usr/include/openssl/rsaerr.h \
@@ -135,13 +135,13 @@ src/CMakeFiles/ssh.dir/pki_ed25519_common.c.o: \
  /usr/include/openssl/core_dispatch.h /usr/include/openssl/evperr.h \
  /usr/include/openssl/objects.h /usr/include/openssl/obj_mac.h \
  /usr/include/openssl/objectserr.h \
- /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/include/libssh/libgcrypt.h \
- /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/include/libssh/libmbedcrypto.h \
+ /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/include/libssh/libgcrypt.h \
+ /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/include/libssh/libmbedcrypto.h \
  /usr/include/openssl/ecdh.h \
- /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/include/libssh/dh.h \
- /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/include/libssh/ecdh.h \
- /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/include/libssh/kex.h \
- /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/include/libssh/curve25519.h \
- /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/include/libssh/libssh.h \
- /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/include/libssh/pki_priv.h \
- /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/include/libssh/buffer.h
+ /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/include/libssh/dh.h \
+ /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/include/libssh/ecdh.h \
+ /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/include/libssh/kex.h \
+ /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/include/libssh/curve25519.h \
+ /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/include/libssh/libssh.h \
+ /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/include/libssh/pki_priv.h \
+ /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/include/libssh/buffer.h

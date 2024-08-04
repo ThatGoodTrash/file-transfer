@@ -1,4 +1,4 @@
-# Install script for directory: /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/include
+# Install script for directory: /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/include
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,7 +44,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/include/libssh/cmake_install.cmake")
+  include("/home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/include/libssh/cmake_install.cmake")
 
 endif()
 

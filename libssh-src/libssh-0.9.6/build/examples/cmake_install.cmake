@@ -1,4 +1,4 @@
-# Install script for directory: /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/examples
+# Install script for directory: /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/examples
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

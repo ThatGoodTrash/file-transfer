@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6
+CMAKE_SOURCE_DIR = /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build
+CMAKE_BINARY_DIR = /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build
 
 # Utility rule file for dist.
 
@@ -82,6 +82,6 @@ CMakeFiles/dist.dir/clean:
 .PHONY : CMakeFiles/dist.dir/clean
 
 CMakeFiles/dist.dir/depend:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6 /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6 /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/CMakeFiles/dist.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6 /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6 /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/CMakeFiles/dist.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/dist.dir/depend
 

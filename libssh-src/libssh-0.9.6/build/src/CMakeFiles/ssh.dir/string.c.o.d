@@ -1,7 +1,7 @@
 src/CMakeFiles/ssh.dir/string.c.o: \
- /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/src/string.c \
+ /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/src/string.c \
  /usr/include/stdc-predef.h \
- /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/config.h \
+ /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/config.h \
  /usr/include/errno.h /usr/include/features.h \
  /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -67,7 +67,7 @@ src/CMakeFiles/ssh.dir/string.c.o: \
  /usr/lib/linux/uapi/x86/asm/sockios.h /usr/include/asm-generic/sockios.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h \
  /usr/include/x86_64-linux-gnu/bits/in.h /usr/include/arpa/inet.h \
- /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/include/libssh/priv.h \
+ /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/include/libssh/priv.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h /usr/include/stdlib.h \
  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
@@ -86,12 +86,12 @@ src/CMakeFiles/ssh.dir/string.c.o: \
  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
  /usr/include/linux/close_range.h \
- /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/include/libssh/libssh.h \
- /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/include/libssh/libssh_version.h \
+ /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/include/libssh/libssh.h \
+ /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/include/libssh/libssh_version.h \
  /usr/include/inttypes.h /usr/include/netdb.h /usr/include/rpc/netdb.h \
  /usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h \
  /usr/include/x86_64-linux-gnu/bits/netdb.h \
- /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/include/libssh/legacy.h \
- /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/include/libssh/callbacks.h \
- /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/include/libssh/string.h
+ /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/include/libssh/legacy.h \
+ /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/include/libssh/callbacks.h \
+ /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/include/libssh/string.h

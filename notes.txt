@@ -1,0 +1,19 @@
+wget https://www.libssh.org/files/0.9/libssh-0.9.6.tar.xz
+tar xf libssh-0.9.6.tar.xz
+cd libssh-0.9.6
+mkdir build
+cd build
+cmake .. -DCMAKE_BUILD_TYPE=Release -DBUILD_STATIC_LIB=ON -DWITH_GSSAPI=OFF
+make
+sudo make install
+
+wget https://libzip.org/download/libzip-1.7.3.tar.gz
+tar xf libzip-1.7.3.tar.gz
+cd libzip-1.7.3
+mkdir build
+cd build
+cmake .. -DCMAKE_BUILD_TYPE=Release -DBUILD_SHARED_LIBS=OFF
+make
+sudo make install
+
+sudo apt-get install zlib1g-dev libssl-dev

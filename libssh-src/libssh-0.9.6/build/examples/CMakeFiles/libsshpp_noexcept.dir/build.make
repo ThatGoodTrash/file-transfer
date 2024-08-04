@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6
+CMAKE_SOURCE_DIR = /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build
+CMAKE_BINARY_DIR = /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build
 
 # Include any dependencies generated for this target.
 include examples/CMakeFiles/libsshpp_noexcept.dir/depend.make
@@ -70,18 +70,18 @@ include examples/CMakeFiles/libsshpp_noexcept.dir/progress.make
 include examples/CMakeFiles/libsshpp_noexcept.dir/flags.make
 
 examples/CMakeFiles/libsshpp_noexcept.dir/libsshpp_noexcept.cpp.o: examples/CMakeFiles/libsshpp_noexcept.dir/flags.make
-examples/CMakeFiles/libsshpp_noexcept.dir/libsshpp_noexcept.cpp.o: /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/examples/libsshpp_noexcept.cpp
+examples/CMakeFiles/libsshpp_noexcept.dir/libsshpp_noexcept.cpp.o: /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/examples/libsshpp_noexcept.cpp
 examples/CMakeFiles/libsshpp_noexcept.dir/libsshpp_noexcept.cpp.o: examples/CMakeFiles/libsshpp_noexcept.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object examples/CMakeFiles/libsshpp_noexcept.dir/libsshpp_noexcept.cpp.o"
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/examples && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT examples/CMakeFiles/libsshpp_noexcept.dir/libsshpp_noexcept.cpp.o -MF CMakeFiles/libsshpp_noexcept.dir/libsshpp_noexcept.cpp.o.d -o CMakeFiles/libsshpp_noexcept.dir/libsshpp_noexcept.cpp.o -c /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/examples/libsshpp_noexcept.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object examples/CMakeFiles/libsshpp_noexcept.dir/libsshpp_noexcept.cpp.o"
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/examples && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT examples/CMakeFiles/libsshpp_noexcept.dir/libsshpp_noexcept.cpp.o -MF CMakeFiles/libsshpp_noexcept.dir/libsshpp_noexcept.cpp.o.d -o CMakeFiles/libsshpp_noexcept.dir/libsshpp_noexcept.cpp.o -c /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/examples/libsshpp_noexcept.cpp
 
 examples/CMakeFiles/libsshpp_noexcept.dir/libsshpp_noexcept.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/libsshpp_noexcept.dir/libsshpp_noexcept.cpp.i"
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/examples && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/examples/libsshpp_noexcept.cpp > CMakeFiles/libsshpp_noexcept.dir/libsshpp_noexcept.cpp.i
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/examples && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/examples/libsshpp_noexcept.cpp > CMakeFiles/libsshpp_noexcept.dir/libsshpp_noexcept.cpp.i
 
 examples/CMakeFiles/libsshpp_noexcept.dir/libsshpp_noexcept.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/libsshpp_noexcept.dir/libsshpp_noexcept.cpp.s"
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/examples && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/examples/libsshpp_noexcept.cpp -o CMakeFiles/libsshpp_noexcept.dir/libsshpp_noexcept.cpp.s
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/examples && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/examples/libsshpp_noexcept.cpp -o CMakeFiles/libsshpp_noexcept.dir/libsshpp_noexcept.cpp.s
 
 # Object files for target libsshpp_noexcept
 libsshpp_noexcept_OBJECTS = \
@@ -95,23 +95,19 @@ examples/libsshpp_noexcept: examples/CMakeFiles/libsshpp_noexcept.dir/build.make
 examples/libsshpp_noexcept: src/libssh.a
 examples/libsshpp_noexcept: /usr/lib/x86_64-linux-gnu/libcrypto.so
 examples/libsshpp_noexcept: /usr/lib/x86_64-linux-gnu/libz.so
-examples/libsshpp_noexcept: /usr/lib/x86_64-linux-gnu/libgssapi_krb5.so
-examples/libsshpp_noexcept: /usr/lib/x86_64-linux-gnu/libkrb5.so
-examples/libsshpp_noexcept: /usr/lib/x86_64-linux-gnu/libk5crypto.so
-examples/libsshpp_noexcept: /usr/lib/x86_64-linux-gnu/libcom_err.so
 examples/libsshpp_noexcept: examples/CMakeFiles/libsshpp_noexcept.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable libsshpp_noexcept"
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/examples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/libsshpp_noexcept.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable libsshpp_noexcept"
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/examples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/libsshpp_noexcept.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 examples/CMakeFiles/libsshpp_noexcept.dir/build: examples/libsshpp_noexcept
 .PHONY : examples/CMakeFiles/libsshpp_noexcept.dir/build
 
 examples/CMakeFiles/libsshpp_noexcept.dir/clean:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/examples && $(CMAKE_COMMAND) -P CMakeFiles/libsshpp_noexcept.dir/cmake_clean.cmake
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/examples && $(CMAKE_COMMAND) -P CMakeFiles/libsshpp_noexcept.dir/cmake_clean.cmake
 .PHONY : examples/CMakeFiles/libsshpp_noexcept.dir/clean
 
 examples/CMakeFiles/libsshpp_noexcept.dir/depend:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6 /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/examples /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/examples /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/examples/CMakeFiles/libsshpp_noexcept.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6 /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/examples /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/examples /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/examples/CMakeFiles/libsshpp_noexcept.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : examples/CMakeFiles/libsshpp_noexcept.dir/depend
 

@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/examples -I/home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/examples -I/home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/include -I/home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build -I/home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/include
+CXX_INCLUDES = -I/home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/examples -I/home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/examples -I/home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/include -I/home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build -I/home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/include
 
 CXX_FLAGS = -fPIE
 

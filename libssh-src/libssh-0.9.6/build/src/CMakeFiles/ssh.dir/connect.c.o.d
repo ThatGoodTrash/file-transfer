@@ -1,7 +1,7 @@
 src/CMakeFiles/ssh.dir/connect.c.o: \
- /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/src/connect.c \
+ /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/src/connect.c \
  /usr/include/stdc-predef.h \
- /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/config.h \
+ /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/config.h \
  /usr/include/errno.h /usr/include/features.h \
  /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -65,8 +65,8 @@ src/CMakeFiles/ssh.dir/connect.c.o: \
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h /usr/include/alloca.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h /usr/include/string.h \
  /usr/include/strings.h /usr/include/x86_64-linux-gnu/sys/time.h \
- /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/include/libssh/libssh.h \
- /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/include/libssh/libssh_version.h \
+ /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/include/libssh/libssh.h \
+ /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/include/libssh/libssh_version.h \
  /usr/include/unistd.h /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
  /usr/include/x86_64-linux-gnu/bits/environments.h \
  /usr/include/x86_64-linux-gnu/bits/confname.h \
@@ -94,20 +94,20 @@ src/CMakeFiles/ssh.dir/connect.c.o: \
  /usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h \
  /usr/include/x86_64-linux-gnu/bits/netdb.h \
- /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/include/libssh/legacy.h \
- /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/include/libssh/misc.h \
+ /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/include/libssh/legacy.h \
+ /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/include/libssh/misc.h \
  /usr/include/netinet/tcp.h \
- /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/include/libssh/priv.h \
+ /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/include/libssh/priv.h \
  /usr/include/arpa/inet.h \
- /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/include/libssh/callbacks.h \
- /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/include/libssh/socket.h \
- /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/include/libssh/channels.h \
- /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/include/libssh/session.h \
- /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/include/libssh/kex.h \
- /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/include/libssh/packet.h \
- /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/include/libssh/wrapper.h \
- /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/include/libssh/config.h \
- /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/include/libssh/libcrypto.h \
+ /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/include/libssh/callbacks.h \
+ /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/include/libssh/socket.h \
+ /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/include/libssh/channels.h \
+ /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/include/libssh/session.h \
+ /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/include/libssh/kex.h \
+ /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/include/libssh/packet.h \
+ /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/include/libssh/wrapper.h \
+ /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/include/libssh/config.h \
+ /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/include/libssh/libcrypto.h \
  /usr/include/openssl/dsa.h /usr/include/openssl/macros.h \
  /usr/include/x86_64-linux-gnu/openssl/opensslconf.h \
  /usr/include/x86_64-linux-gnu/openssl/configuration.h \
@@ -146,11 +146,11 @@ src/CMakeFiles/ssh.dir/connect.c.o: \
  /usr/include/openssl/evperr.h /usr/include/openssl/params.h \
  /usr/include/openssl/objects.h /usr/include/openssl/obj_mac.h \
  /usr/include/openssl/objectserr.h \
- /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/include/libssh/libgcrypt.h \
- /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/include/libssh/libmbedcrypto.h \
- /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/include/libssh/pcap.h \
- /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/include/libssh/auth.h \
- /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/include/libssh/poll.h \
+ /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/include/libssh/libgcrypt.h \
+ /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/include/libssh/libmbedcrypto.h \
+ /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/include/libssh/pcap.h \
+ /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/include/libssh/auth.h \
+ /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/include/libssh/poll.h \
  /usr/include/poll.h /usr/include/x86_64-linux-gnu/sys/poll.h \
  /usr/include/x86_64-linux-gnu/bits/poll.h \
- /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/include/libssh/config.h
+ /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/include/libssh/config.h

@@ -1,4 +1,4 @@
-# Install script for directory: /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6
+# Install script for directory: /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -43,19 +43,19 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "pkgconfig" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/libssh.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/libssh.pc")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "devel" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/libssh" TYPE FILE FILES "/home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/libssh-config-version.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/libssh" TYPE FILE FILES "/home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/libssh-config-version.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/doc/cmake_install.cmake")
-  include("/home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/include/cmake_install.cmake")
-  include("/home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/src/cmake_install.cmake")
-  include("/home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/examples/cmake_install.cmake")
+  include("/home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/doc/cmake_install.cmake")
+  include("/home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/include/cmake_install.cmake")
+  include("/home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/src/cmake_install.cmake")
+  include("/home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/examples/cmake_install.cmake")
 
 endif()
 
@@ -67,5 +67,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

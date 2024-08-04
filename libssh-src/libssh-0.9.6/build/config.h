@@ -5,8 +5,8 @@
 #define VERSION "0.9.6"
 
 #define SYSCONFDIR "etc"
-#define BINARYDIR "/home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build"
-#define SOURCEDIR "/home/kali/projects/file-transfer/libssh-src/libssh-0.9.6"
+#define BINARYDIR "/home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build"
+#define SOURCEDIR "/home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6"
 
 /* Global bind configuration file path */
 #define GLOBAL_BIND_CONFIG "/etc/ssh/libssh_server_config"
@@ -246,7 +246,7 @@
 /* #undef HAVE_GCC_BOUNDED_ATTRIBUTE */
 
 /* Define to 1 if you want to enable GSSAPI */
-#define WITH_GSSAPI 1
+/* #undef WITH_GSSAPI */
 
 /* Define to 1 if you want to enable ZLIB */
 #define WITH_ZLIB 1

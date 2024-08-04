@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6
+CMAKE_SOURCE_DIR = /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build
+CMAKE_BINARY_DIR = /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build
 
 # Include any dependencies generated for this target.
 include examples/CMakeFiles/libssh_scp.dir/depend.make
@@ -70,60 +70,60 @@ include examples/CMakeFiles/libssh_scp.dir/progress.make
 include examples/CMakeFiles/libssh_scp.dir/flags.make
 
 examples/CMakeFiles/libssh_scp.dir/libssh_scp.c.o: examples/CMakeFiles/libssh_scp.dir/flags.make
-examples/CMakeFiles/libssh_scp.dir/libssh_scp.c.o: /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/examples/libssh_scp.c
+examples/CMakeFiles/libssh_scp.dir/libssh_scp.c.o: /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/examples/libssh_scp.c
 examples/CMakeFiles/libssh_scp.dir/libssh_scp.c.o: examples/CMakeFiles/libssh_scp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object examples/CMakeFiles/libssh_scp.dir/libssh_scp.c.o"
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT examples/CMakeFiles/libssh_scp.dir/libssh_scp.c.o -MF CMakeFiles/libssh_scp.dir/libssh_scp.c.o.d -o CMakeFiles/libssh_scp.dir/libssh_scp.c.o -c /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/examples/libssh_scp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object examples/CMakeFiles/libssh_scp.dir/libssh_scp.c.o"
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT examples/CMakeFiles/libssh_scp.dir/libssh_scp.c.o -MF CMakeFiles/libssh_scp.dir/libssh_scp.c.o.d -o CMakeFiles/libssh_scp.dir/libssh_scp.c.o -c /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/examples/libssh_scp.c
 
 examples/CMakeFiles/libssh_scp.dir/libssh_scp.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libssh_scp.dir/libssh_scp.c.i"
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/examples/libssh_scp.c > CMakeFiles/libssh_scp.dir/libssh_scp.c.i
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/examples/libssh_scp.c > CMakeFiles/libssh_scp.dir/libssh_scp.c.i
 
 examples/CMakeFiles/libssh_scp.dir/libssh_scp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libssh_scp.dir/libssh_scp.c.s"
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/examples/libssh_scp.c -o CMakeFiles/libssh_scp.dir/libssh_scp.c.s
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/examples/libssh_scp.c -o CMakeFiles/libssh_scp.dir/libssh_scp.c.s
 
 examples/CMakeFiles/libssh_scp.dir/authentication.c.o: examples/CMakeFiles/libssh_scp.dir/flags.make
-examples/CMakeFiles/libssh_scp.dir/authentication.c.o: /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/examples/authentication.c
+examples/CMakeFiles/libssh_scp.dir/authentication.c.o: /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/examples/authentication.c
 examples/CMakeFiles/libssh_scp.dir/authentication.c.o: examples/CMakeFiles/libssh_scp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object examples/CMakeFiles/libssh_scp.dir/authentication.c.o"
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT examples/CMakeFiles/libssh_scp.dir/authentication.c.o -MF CMakeFiles/libssh_scp.dir/authentication.c.o.d -o CMakeFiles/libssh_scp.dir/authentication.c.o -c /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/examples/authentication.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object examples/CMakeFiles/libssh_scp.dir/authentication.c.o"
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT examples/CMakeFiles/libssh_scp.dir/authentication.c.o -MF CMakeFiles/libssh_scp.dir/authentication.c.o.d -o CMakeFiles/libssh_scp.dir/authentication.c.o -c /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/examples/authentication.c
 
 examples/CMakeFiles/libssh_scp.dir/authentication.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libssh_scp.dir/authentication.c.i"
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/examples/authentication.c > CMakeFiles/libssh_scp.dir/authentication.c.i
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/examples/authentication.c > CMakeFiles/libssh_scp.dir/authentication.c.i
 
 examples/CMakeFiles/libssh_scp.dir/authentication.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libssh_scp.dir/authentication.c.s"
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/examples/authentication.c -o CMakeFiles/libssh_scp.dir/authentication.c.s
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/examples/authentication.c -o CMakeFiles/libssh_scp.dir/authentication.c.s
 
 examples/CMakeFiles/libssh_scp.dir/knownhosts.c.o: examples/CMakeFiles/libssh_scp.dir/flags.make
-examples/CMakeFiles/libssh_scp.dir/knownhosts.c.o: /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/examples/knownhosts.c
+examples/CMakeFiles/libssh_scp.dir/knownhosts.c.o: /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/examples/knownhosts.c
 examples/CMakeFiles/libssh_scp.dir/knownhosts.c.o: examples/CMakeFiles/libssh_scp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object examples/CMakeFiles/libssh_scp.dir/knownhosts.c.o"
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT examples/CMakeFiles/libssh_scp.dir/knownhosts.c.o -MF CMakeFiles/libssh_scp.dir/knownhosts.c.o.d -o CMakeFiles/libssh_scp.dir/knownhosts.c.o -c /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/examples/knownhosts.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object examples/CMakeFiles/libssh_scp.dir/knownhosts.c.o"
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT examples/CMakeFiles/libssh_scp.dir/knownhosts.c.o -MF CMakeFiles/libssh_scp.dir/knownhosts.c.o.d -o CMakeFiles/libssh_scp.dir/knownhosts.c.o -c /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/examples/knownhosts.c
 
 examples/CMakeFiles/libssh_scp.dir/knownhosts.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libssh_scp.dir/knownhosts.c.i"
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/examples/knownhosts.c > CMakeFiles/libssh_scp.dir/knownhosts.c.i
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/examples/knownhosts.c > CMakeFiles/libssh_scp.dir/knownhosts.c.i
 
 examples/CMakeFiles/libssh_scp.dir/knownhosts.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libssh_scp.dir/knownhosts.c.s"
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/examples/knownhosts.c -o CMakeFiles/libssh_scp.dir/knownhosts.c.s
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/examples/knownhosts.c -o CMakeFiles/libssh_scp.dir/knownhosts.c.s
 
 examples/CMakeFiles/libssh_scp.dir/connect_ssh.c.o: examples/CMakeFiles/libssh_scp.dir/flags.make
-examples/CMakeFiles/libssh_scp.dir/connect_ssh.c.o: /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/examples/connect_ssh.c
+examples/CMakeFiles/libssh_scp.dir/connect_ssh.c.o: /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/examples/connect_ssh.c
 examples/CMakeFiles/libssh_scp.dir/connect_ssh.c.o: examples/CMakeFiles/libssh_scp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object examples/CMakeFiles/libssh_scp.dir/connect_ssh.c.o"
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT examples/CMakeFiles/libssh_scp.dir/connect_ssh.c.o -MF CMakeFiles/libssh_scp.dir/connect_ssh.c.o.d -o CMakeFiles/libssh_scp.dir/connect_ssh.c.o -c /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/examples/connect_ssh.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object examples/CMakeFiles/libssh_scp.dir/connect_ssh.c.o"
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT examples/CMakeFiles/libssh_scp.dir/connect_ssh.c.o -MF CMakeFiles/libssh_scp.dir/connect_ssh.c.o.d -o CMakeFiles/libssh_scp.dir/connect_ssh.c.o -c /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/examples/connect_ssh.c
 
 examples/CMakeFiles/libssh_scp.dir/connect_ssh.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libssh_scp.dir/connect_ssh.c.i"
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/examples/connect_ssh.c > CMakeFiles/libssh_scp.dir/connect_ssh.c.i
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/examples/connect_ssh.c > CMakeFiles/libssh_scp.dir/connect_ssh.c.i
 
 examples/CMakeFiles/libssh_scp.dir/connect_ssh.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libssh_scp.dir/connect_ssh.c.s"
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/examples/connect_ssh.c -o CMakeFiles/libssh_scp.dir/connect_ssh.c.s
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/examples/connect_ssh.c -o CMakeFiles/libssh_scp.dir/connect_ssh.c.s
 
 # Object files for target libssh_scp
 libssh_scp_OBJECTS = \
@@ -143,23 +143,19 @@ examples/libssh_scp: examples/CMakeFiles/libssh_scp.dir/build.make
 examples/libssh_scp: src/libssh.a
 examples/libssh_scp: /usr/lib/x86_64-linux-gnu/libcrypto.so
 examples/libssh_scp: /usr/lib/x86_64-linux-gnu/libz.so
-examples/libssh_scp: /usr/lib/x86_64-linux-gnu/libgssapi_krb5.so
-examples/libssh_scp: /usr/lib/x86_64-linux-gnu/libkrb5.so
-examples/libssh_scp: /usr/lib/x86_64-linux-gnu/libk5crypto.so
-examples/libssh_scp: /usr/lib/x86_64-linux-gnu/libcom_err.so
 examples/libssh_scp: examples/CMakeFiles/libssh_scp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable libssh_scp"
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/examples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/libssh_scp.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable libssh_scp"
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/examples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/libssh_scp.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 examples/CMakeFiles/libssh_scp.dir/build: examples/libssh_scp
 .PHONY : examples/CMakeFiles/libssh_scp.dir/build
 
 examples/CMakeFiles/libssh_scp.dir/clean:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/examples && $(CMAKE_COMMAND) -P CMakeFiles/libssh_scp.dir/cmake_clean.cmake
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/examples && $(CMAKE_COMMAND) -P CMakeFiles/libssh_scp.dir/cmake_clean.cmake
 .PHONY : examples/CMakeFiles/libssh_scp.dir/clean
 
 examples/CMakeFiles/libssh_scp.dir/depend:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6 /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/examples /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/examples /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/examples/CMakeFiles/libssh_scp.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6 /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/examples /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/examples /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/examples/CMakeFiles/libssh_scp.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : examples/CMakeFiles/libssh_scp.dir/depend
 

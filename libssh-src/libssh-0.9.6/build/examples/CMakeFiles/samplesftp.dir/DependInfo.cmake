@@ -8,10 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/examples/authentication.c" "examples/CMakeFiles/samplesftp.dir/authentication.c.o" "gcc" "examples/CMakeFiles/samplesftp.dir/authentication.c.o.d"
-  "/home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/examples/connect_ssh.c" "examples/CMakeFiles/samplesftp.dir/connect_ssh.c.o" "gcc" "examples/CMakeFiles/samplesftp.dir/connect_ssh.c.o.d"
-  "/home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/examples/knownhosts.c" "examples/CMakeFiles/samplesftp.dir/knownhosts.c.o" "gcc" "examples/CMakeFiles/samplesftp.dir/knownhosts.c.o.d"
-  "/home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/examples/samplesftp.c" "examples/CMakeFiles/samplesftp.dir/samplesftp.c.o" "gcc" "examples/CMakeFiles/samplesftp.dir/samplesftp.c.o.d"
+  "/home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/examples/authentication.c" "examples/CMakeFiles/samplesftp.dir/authentication.c.o" "gcc" "examples/CMakeFiles/samplesftp.dir/authentication.c.o.d"
+  "/home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/examples/connect_ssh.c" "examples/CMakeFiles/samplesftp.dir/connect_ssh.c.o" "gcc" "examples/CMakeFiles/samplesftp.dir/connect_ssh.c.o.d"
+  "/home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/examples/knownhosts.c" "examples/CMakeFiles/samplesftp.dir/knownhosts.c.o" "gcc" "examples/CMakeFiles/samplesftp.dir/knownhosts.c.o.d"
+  "/home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/examples/samplesftp.c" "examples/CMakeFiles/samplesftp.dir/samplesftp.c.o" "gcc" "examples/CMakeFiles/samplesftp.dir/samplesftp.c.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

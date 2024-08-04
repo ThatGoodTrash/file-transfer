@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/examples/keygen.c" "examples/CMakeFiles/keygen.dir/keygen.c.o" "gcc" "examples/CMakeFiles/keygen.dir/keygen.c.o.d"
+  "/home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/examples/keygen.c" "examples/CMakeFiles/keygen.dir/keygen.c.o" "gcc" "examples/CMakeFiles/keygen.dir/keygen.c.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

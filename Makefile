@@ -3,10 +3,10 @@
 # Compiler and flags
 CXX = g++
 CXXFLAGS = -std=c++17 -Wall -Wextra -O2
-LDFLAGS = -static
+LDFLAGS = -fPIC -static
 
 LIB_PATHS = /usr/local/lib /usr/lib
-LIBS = -lzip -lssh -lssl -lcrypto -lz -lzstd -lgssapi
+LIBS = -lssh -lzip -lcrypto -lz -lssl -lzstd
 
 # Output binary name
 TARGET = file-transfer
@@ -21,7 +21,7 @@ OBJS = $(SRCS:.cpp=.o)
 all: $(TARGET)
 
 $(TARGET): $(OBJS)
-	$(CXX) $(CXXFLAGS) $(OBJS) $(LIBS) $(LDFLAGS) -o $(TARGET)  
+	$(CXX) $(CXXFLAGS) $(LDFLAGS) $(OBJS) $(LIBS) -o $(TARGET)  
 
 # Clean up
 clean:

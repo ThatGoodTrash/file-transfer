@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6
+CMAKE_SOURCE_DIR = /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build
+CMAKE_BINARY_DIR = /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/bui
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool..."
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && /usr/bin/cpack --config ./CPackConfig.cmake
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && /usr/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -78,7 +78,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool for source..."
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/CPackSourceConfig.cmake
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -152,14 +152,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/CMakeFiles /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/src//CMakeFiles/progress.marks
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/CMakeFiles 0
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/CMakeFiles /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/src//CMakeFiles/progress.marks
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/clean
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -168,22 +168,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/CMakeFiles/ssh.dir/rule:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/ssh.dir/rule
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/ssh.dir/rule
 .PHONY : src/CMakeFiles/ssh.dir/rule
 
 # Convenience name for target.
@@ -192,7 +192,7 @@ ssh: src/CMakeFiles/ssh.dir/rule
 
 # fast build rule for target.
 ssh/fast:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/build
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/build
 .PHONY : ssh/fast
 
 agent.o: agent.c.o
@@ -200,7 +200,7 @@ agent.o: agent.c.o
 
 # target to build an object file
 agent.c.o:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/agent.c.o
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/agent.c.o
 .PHONY : agent.c.o
 
 agent.i: agent.c.i
@@ -208,7 +208,7 @@ agent.i: agent.c.i
 
 # target to preprocess a source file
 agent.c.i:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/agent.c.i
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/agent.c.i
 .PHONY : agent.c.i
 
 agent.s: agent.c.s
@@ -216,7 +216,7 @@ agent.s: agent.c.s
 
 # target to generate assembly for a file
 agent.c.s:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/agent.c.s
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/agent.c.s
 .PHONY : agent.c.s
 
 auth.o: auth.c.o
@@ -224,7 +224,7 @@ auth.o: auth.c.o
 
 # target to build an object file
 auth.c.o:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/auth.c.o
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/auth.c.o
 .PHONY : auth.c.o
 
 auth.i: auth.c.i
@@ -232,7 +232,7 @@ auth.i: auth.c.i
 
 # target to preprocess a source file
 auth.c.i:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/auth.c.i
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/auth.c.i
 .PHONY : auth.c.i
 
 auth.s: auth.c.s
@@ -240,7 +240,7 @@ auth.s: auth.c.s
 
 # target to generate assembly for a file
 auth.c.s:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/auth.c.s
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/auth.c.s
 .PHONY : auth.c.s
 
 base64.o: base64.c.o
@@ -248,7 +248,7 @@ base64.o: base64.c.o
 
 # target to build an object file
 base64.c.o:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/base64.c.o
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/base64.c.o
 .PHONY : base64.c.o
 
 base64.i: base64.c.i
@@ -256,7 +256,7 @@ base64.i: base64.c.i
 
 # target to preprocess a source file
 base64.c.i:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/base64.c.i
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/base64.c.i
 .PHONY : base64.c.i
 
 base64.s: base64.c.s
@@ -264,7 +264,7 @@ base64.s: base64.c.s
 
 # target to generate assembly for a file
 base64.c.s:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/base64.c.s
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/base64.c.s
 .PHONY : base64.c.s
 
 bignum.o: bignum.c.o
@@ -272,7 +272,7 @@ bignum.o: bignum.c.o
 
 # target to build an object file
 bignum.c.o:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/bignum.c.o
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/bignum.c.o
 .PHONY : bignum.c.o
 
 bignum.i: bignum.c.i
@@ -280,7 +280,7 @@ bignum.i: bignum.c.i
 
 # target to preprocess a source file
 bignum.c.i:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/bignum.c.i
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/bignum.c.i
 .PHONY : bignum.c.i
 
 bignum.s: bignum.c.s
@@ -288,7 +288,7 @@ bignum.s: bignum.c.s
 
 # target to generate assembly for a file
 bignum.c.s:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/bignum.c.s
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/bignum.c.s
 .PHONY : bignum.c.s
 
 bind.o: bind.c.o
@@ -296,7 +296,7 @@ bind.o: bind.c.o
 
 # target to build an object file
 bind.c.o:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/bind.c.o
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/bind.c.o
 .PHONY : bind.c.o
 
 bind.i: bind.c.i
@@ -304,7 +304,7 @@ bind.i: bind.c.i
 
 # target to preprocess a source file
 bind.c.i:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/bind.c.i
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/bind.c.i
 .PHONY : bind.c.i
 
 bind.s: bind.c.s
@@ -312,7 +312,7 @@ bind.s: bind.c.s
 
 # target to generate assembly for a file
 bind.c.s:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/bind.c.s
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/bind.c.s
 .PHONY : bind.c.s
 
 bind_config.o: bind_config.c.o
@@ -320,7 +320,7 @@ bind_config.o: bind_config.c.o
 
 # target to build an object file
 bind_config.c.o:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/bind_config.c.o
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/bind_config.c.o
 .PHONY : bind_config.c.o
 
 bind_config.i: bind_config.c.i
@@ -328,7 +328,7 @@ bind_config.i: bind_config.c.i
 
 # target to preprocess a source file
 bind_config.c.i:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/bind_config.c.i
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/bind_config.c.i
 .PHONY : bind_config.c.i
 
 bind_config.s: bind_config.c.s
@@ -336,7 +336,7 @@ bind_config.s: bind_config.c.s
 
 # target to generate assembly for a file
 bind_config.c.s:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/bind_config.c.s
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/bind_config.c.s
 .PHONY : bind_config.c.s
 
 buffer.o: buffer.c.o
@@ -344,7 +344,7 @@ buffer.o: buffer.c.o
 
 # target to build an object file
 buffer.c.o:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/buffer.c.o
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/buffer.c.o
 .PHONY : buffer.c.o
 
 buffer.i: buffer.c.i
@@ -352,7 +352,7 @@ buffer.i: buffer.c.i
 
 # target to preprocess a source file
 buffer.c.i:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/buffer.c.i
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/buffer.c.i
 .PHONY : buffer.c.i
 
 buffer.s: buffer.c.s
@@ -360,7 +360,7 @@ buffer.s: buffer.c.s
 
 # target to generate assembly for a file
 buffer.c.s:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/buffer.c.s
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/buffer.c.s
 .PHONY : buffer.c.s
 
 callbacks.o: callbacks.c.o
@@ -368,7 +368,7 @@ callbacks.o: callbacks.c.o
 
 # target to build an object file
 callbacks.c.o:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/callbacks.c.o
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/callbacks.c.o
 .PHONY : callbacks.c.o
 
 callbacks.i: callbacks.c.i
@@ -376,7 +376,7 @@ callbacks.i: callbacks.c.i
 
 # target to preprocess a source file
 callbacks.c.i:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/callbacks.c.i
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/callbacks.c.i
 .PHONY : callbacks.c.i
 
 callbacks.s: callbacks.c.s
@@ -384,7 +384,7 @@ callbacks.s: callbacks.c.s
 
 # target to generate assembly for a file
 callbacks.c.s:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/callbacks.c.s
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/callbacks.c.s
 .PHONY : callbacks.c.s
 
 chachapoly.o: chachapoly.c.o
@@ -392,7 +392,7 @@ chachapoly.o: chachapoly.c.o
 
 # target to build an object file
 chachapoly.c.o:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/chachapoly.c.o
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/chachapoly.c.o
 .PHONY : chachapoly.c.o
 
 chachapoly.i: chachapoly.c.i
@@ -400,7 +400,7 @@ chachapoly.i: chachapoly.c.i
 
 # target to preprocess a source file
 chachapoly.c.i:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/chachapoly.c.i
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/chachapoly.c.i
 .PHONY : chachapoly.c.i
 
 chachapoly.s: chachapoly.c.s
@@ -408,7 +408,7 @@ chachapoly.s: chachapoly.c.s
 
 # target to generate assembly for a file
 chachapoly.c.s:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/chachapoly.c.s
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/chachapoly.c.s
 .PHONY : chachapoly.c.s
 
 channels.o: channels.c.o
@@ -416,7 +416,7 @@ channels.o: channels.c.o
 
 # target to build an object file
 channels.c.o:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/channels.c.o
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/channels.c.o
 .PHONY : channels.c.o
 
 channels.i: channels.c.i
@@ -424,7 +424,7 @@ channels.i: channels.c.i
 
 # target to preprocess a source file
 channels.c.i:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/channels.c.i
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/channels.c.i
 .PHONY : channels.c.i
 
 channels.s: channels.c.s
@@ -432,7 +432,7 @@ channels.s: channels.c.s
 
 # target to generate assembly for a file
 channels.c.s:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/channels.c.s
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/channels.c.s
 .PHONY : channels.c.s
 
 client.o: client.c.o
@@ -440,7 +440,7 @@ client.o: client.c.o
 
 # target to build an object file
 client.c.o:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/client.c.o
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/client.c.o
 .PHONY : client.c.o
 
 client.i: client.c.i
@@ -448,7 +448,7 @@ client.i: client.c.i
 
 # target to preprocess a source file
 client.c.i:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/client.c.i
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/client.c.i
 .PHONY : client.c.i
 
 client.s: client.c.s
@@ -456,7 +456,7 @@ client.s: client.c.s
 
 # target to generate assembly for a file
 client.c.s:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/client.c.s
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/client.c.s
 .PHONY : client.c.s
 
 config.o: config.c.o
@@ -464,7 +464,7 @@ config.o: config.c.o
 
 # target to build an object file
 config.c.o:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/config.c.o
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/config.c.o
 .PHONY : config.c.o
 
 config.i: config.c.i
@@ -472,7 +472,7 @@ config.i: config.c.i
 
 # target to preprocess a source file
 config.c.i:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/config.c.i
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/config.c.i
 .PHONY : config.c.i
 
 config.s: config.c.s
@@ -480,7 +480,7 @@ config.s: config.c.s
 
 # target to generate assembly for a file
 config.c.s:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/config.c.s
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/config.c.s
 .PHONY : config.c.s
 
 config_parser.o: config_parser.c.o
@@ -488,7 +488,7 @@ config_parser.o: config_parser.c.o
 
 # target to build an object file
 config_parser.c.o:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/config_parser.c.o
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/config_parser.c.o
 .PHONY : config_parser.c.o
 
 config_parser.i: config_parser.c.i
@@ -496,7 +496,7 @@ config_parser.i: config_parser.c.i
 
 # target to preprocess a source file
 config_parser.c.i:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/config_parser.c.i
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/config_parser.c.i
 .PHONY : config_parser.c.i
 
 config_parser.s: config_parser.c.s
@@ -504,7 +504,7 @@ config_parser.s: config_parser.c.s
 
 # target to generate assembly for a file
 config_parser.c.s:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/config_parser.c.s
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/config_parser.c.s
 .PHONY : config_parser.c.s
 
 connect.o: connect.c.o
@@ -512,7 +512,7 @@ connect.o: connect.c.o
 
 # target to build an object file
 connect.c.o:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/connect.c.o
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/connect.c.o
 .PHONY : connect.c.o
 
 connect.i: connect.c.i
@@ -520,7 +520,7 @@ connect.i: connect.c.i
 
 # target to preprocess a source file
 connect.c.i:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/connect.c.i
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/connect.c.i
 .PHONY : connect.c.i
 
 connect.s: connect.c.s
@@ -528,7 +528,7 @@ connect.s: connect.c.s
 
 # target to generate assembly for a file
 connect.c.s:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/connect.c.s
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/connect.c.s
 .PHONY : connect.c.s
 
 connector.o: connector.c.o
@@ -536,7 +536,7 @@ connector.o: connector.c.o
 
 # target to build an object file
 connector.c.o:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/connector.c.o
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/connector.c.o
 .PHONY : connector.c.o
 
 connector.i: connector.c.i
@@ -544,7 +544,7 @@ connector.i: connector.c.i
 
 # target to preprocess a source file
 connector.c.i:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/connector.c.i
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/connector.c.i
 .PHONY : connector.c.i
 
 connector.s: connector.c.s
@@ -552,7 +552,7 @@ connector.s: connector.c.s
 
 # target to generate assembly for a file
 connector.c.s:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/connector.c.s
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/connector.c.s
 .PHONY : connector.c.s
 
 curve25519.o: curve25519.c.o
@@ -560,7 +560,7 @@ curve25519.o: curve25519.c.o
 
 # target to build an object file
 curve25519.c.o:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/curve25519.c.o
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/curve25519.c.o
 .PHONY : curve25519.c.o
 
 curve25519.i: curve25519.c.i
@@ -568,7 +568,7 @@ curve25519.i: curve25519.c.i
 
 # target to preprocess a source file
 curve25519.c.i:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/curve25519.c.i
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/curve25519.c.i
 .PHONY : curve25519.c.i
 
 curve25519.s: curve25519.c.s
@@ -576,7 +576,7 @@ curve25519.s: curve25519.c.s
 
 # target to generate assembly for a file
 curve25519.c.s:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/curve25519.c.s
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/curve25519.c.s
 .PHONY : curve25519.c.s
 
 dh-gex.o: dh-gex.c.o
@@ -584,7 +584,7 @@ dh-gex.o: dh-gex.c.o
 
 # target to build an object file
 dh-gex.c.o:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/dh-gex.c.o
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/dh-gex.c.o
 .PHONY : dh-gex.c.o
 
 dh-gex.i: dh-gex.c.i
@@ -592,7 +592,7 @@ dh-gex.i: dh-gex.c.i
 
 # target to preprocess a source file
 dh-gex.c.i:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/dh-gex.c.i
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/dh-gex.c.i
 .PHONY : dh-gex.c.i
 
 dh-gex.s: dh-gex.c.s
@@ -600,7 +600,7 @@ dh-gex.s: dh-gex.c.s
 
 # target to generate assembly for a file
 dh-gex.c.s:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/dh-gex.c.s
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/dh-gex.c.s
 .PHONY : dh-gex.c.s
 
 dh.o: dh.c.o
@@ -608,7 +608,7 @@ dh.o: dh.c.o
 
 # target to build an object file
 dh.c.o:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/dh.c.o
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/dh.c.o
 .PHONY : dh.c.o
 
 dh.i: dh.c.i
@@ -616,7 +616,7 @@ dh.i: dh.c.i
 
 # target to preprocess a source file
 dh.c.i:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/dh.c.i
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/dh.c.i
 .PHONY : dh.c.i
 
 dh.s: dh.c.s
@@ -624,7 +624,7 @@ dh.s: dh.c.s
 
 # target to generate assembly for a file
 dh.c.s:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/dh.c.s
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/dh.c.s
 .PHONY : dh.c.s
 
 dh_crypto.o: dh_crypto.c.o
@@ -632,7 +632,7 @@ dh_crypto.o: dh_crypto.c.o
 
 # target to build an object file
 dh_crypto.c.o:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/dh_crypto.c.o
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/dh_crypto.c.o
 .PHONY : dh_crypto.c.o
 
 dh_crypto.i: dh_crypto.c.i
@@ -640,7 +640,7 @@ dh_crypto.i: dh_crypto.c.i
 
 # target to preprocess a source file
 dh_crypto.c.i:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/dh_crypto.c.i
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/dh_crypto.c.i
 .PHONY : dh_crypto.c.i
 
 dh_crypto.s: dh_crypto.c.s
@@ -648,7 +648,7 @@ dh_crypto.s: dh_crypto.c.s
 
 # target to generate assembly for a file
 dh_crypto.c.s:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/dh_crypto.c.s
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/dh_crypto.c.s
 .PHONY : dh_crypto.c.s
 
 ecdh.o: ecdh.c.o
@@ -656,7 +656,7 @@ ecdh.o: ecdh.c.o
 
 # target to build an object file
 ecdh.c.o:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/ecdh.c.o
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/ecdh.c.o
 .PHONY : ecdh.c.o
 
 ecdh.i: ecdh.c.i
@@ -664,7 +664,7 @@ ecdh.i: ecdh.c.i
 
 # target to preprocess a source file
 ecdh.c.i:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/ecdh.c.i
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/ecdh.c.i
 .PHONY : ecdh.c.i
 
 ecdh.s: ecdh.c.s
@@ -672,7 +672,7 @@ ecdh.s: ecdh.c.s
 
 # target to generate assembly for a file
 ecdh.c.s:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/ecdh.c.s
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/ecdh.c.s
 .PHONY : ecdh.c.s
 
 ecdh_crypto.o: ecdh_crypto.c.o
@@ -680,7 +680,7 @@ ecdh_crypto.o: ecdh_crypto.c.o
 
 # target to build an object file
 ecdh_crypto.c.o:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/ecdh_crypto.c.o
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/ecdh_crypto.c.o
 .PHONY : ecdh_crypto.c.o
 
 ecdh_crypto.i: ecdh_crypto.c.i
@@ -688,7 +688,7 @@ ecdh_crypto.i: ecdh_crypto.c.i
 
 # target to preprocess a source file
 ecdh_crypto.c.i:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/ecdh_crypto.c.i
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/ecdh_crypto.c.i
 .PHONY : ecdh_crypto.c.i
 
 ecdh_crypto.s: ecdh_crypto.c.s
@@ -696,7 +696,7 @@ ecdh_crypto.s: ecdh_crypto.c.s
 
 # target to generate assembly for a file
 ecdh_crypto.c.s:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/ecdh_crypto.c.s
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/ecdh_crypto.c.s
 .PHONY : ecdh_crypto.c.s
 
 error.o: error.c.o
@@ -704,7 +704,7 @@ error.o: error.c.o
 
 # target to build an object file
 error.c.o:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/error.c.o
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/error.c.o
 .PHONY : error.c.o
 
 error.i: error.c.i
@@ -712,7 +712,7 @@ error.i: error.c.i
 
 # target to preprocess a source file
 error.c.i:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/error.c.i
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/error.c.i
 .PHONY : error.c.i
 
 error.s: error.c.s
@@ -720,7 +720,7 @@ error.s: error.c.s
 
 # target to generate assembly for a file
 error.c.s:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/error.c.s
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/error.c.s
 .PHONY : error.c.s
 
 external/bcrypt_pbkdf.o: external/bcrypt_pbkdf.c.o
@@ -728,7 +728,7 @@ external/bcrypt_pbkdf.o: external/bcrypt_pbkdf.c.o
 
 # target to build an object file
 external/bcrypt_pbkdf.c.o:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/external/bcrypt_pbkdf.c.o
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/external/bcrypt_pbkdf.c.o
 .PHONY : external/bcrypt_pbkdf.c.o
 
 external/bcrypt_pbkdf.i: external/bcrypt_pbkdf.c.i
@@ -736,7 +736,7 @@ external/bcrypt_pbkdf.i: external/bcrypt_pbkdf.c.i
 
 # target to preprocess a source file
 external/bcrypt_pbkdf.c.i:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/external/bcrypt_pbkdf.c.i
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/external/bcrypt_pbkdf.c.i
 .PHONY : external/bcrypt_pbkdf.c.i
 
 external/bcrypt_pbkdf.s: external/bcrypt_pbkdf.c.s
@@ -744,7 +744,7 @@ external/bcrypt_pbkdf.s: external/bcrypt_pbkdf.c.s
 
 # target to generate assembly for a file
 external/bcrypt_pbkdf.c.s:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/external/bcrypt_pbkdf.c.s
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/external/bcrypt_pbkdf.c.s
 .PHONY : external/bcrypt_pbkdf.c.s
 
 external/blowfish.o: external/blowfish.c.o
@@ -752,7 +752,7 @@ external/blowfish.o: external/blowfish.c.o
 
 # target to build an object file
 external/blowfish.c.o:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/external/blowfish.c.o
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/external/blowfish.c.o
 .PHONY : external/blowfish.c.o
 
 external/blowfish.i: external/blowfish.c.i
@@ -760,7 +760,7 @@ external/blowfish.i: external/blowfish.c.i
 
 # target to preprocess a source file
 external/blowfish.c.i:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/external/blowfish.c.i
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/external/blowfish.c.i
 .PHONY : external/blowfish.c.i
 
 external/blowfish.s: external/blowfish.c.s
@@ -768,7 +768,7 @@ external/blowfish.s: external/blowfish.c.s
 
 # target to generate assembly for a file
 external/blowfish.c.s:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/external/blowfish.c.s
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/external/blowfish.c.s
 .PHONY : external/blowfish.c.s
 
 external/chacha.o: external/chacha.c.o
@@ -776,7 +776,7 @@ external/chacha.o: external/chacha.c.o
 
 # target to build an object file
 external/chacha.c.o:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/external/chacha.c.o
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/external/chacha.c.o
 .PHONY : external/chacha.c.o
 
 external/chacha.i: external/chacha.c.i
@@ -784,7 +784,7 @@ external/chacha.i: external/chacha.c.i
 
 # target to preprocess a source file
 external/chacha.c.i:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/external/chacha.c.i
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/external/chacha.c.i
 .PHONY : external/chacha.c.i
 
 external/chacha.s: external/chacha.c.s
@@ -792,7 +792,7 @@ external/chacha.s: external/chacha.c.s
 
 # target to generate assembly for a file
 external/chacha.c.s:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/external/chacha.c.s
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/external/chacha.c.s
 .PHONY : external/chacha.c.s
 
 external/poly1305.o: external/poly1305.c.o
@@ -800,7 +800,7 @@ external/poly1305.o: external/poly1305.c.o
 
 # target to build an object file
 external/poly1305.c.o:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/external/poly1305.c.o
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/external/poly1305.c.o
 .PHONY : external/poly1305.c.o
 
 external/poly1305.i: external/poly1305.c.i
@@ -808,7 +808,7 @@ external/poly1305.i: external/poly1305.c.i
 
 # target to preprocess a source file
 external/poly1305.c.i:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/external/poly1305.c.i
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/external/poly1305.c.i
 .PHONY : external/poly1305.c.i
 
 external/poly1305.s: external/poly1305.c.s
@@ -816,7 +816,7 @@ external/poly1305.s: external/poly1305.c.s
 
 # target to generate assembly for a file
 external/poly1305.c.s:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/external/poly1305.c.s
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/external/poly1305.c.s
 .PHONY : external/poly1305.c.s
 
 getpass.o: getpass.c.o
@@ -824,7 +824,7 @@ getpass.o: getpass.c.o
 
 # target to build an object file
 getpass.c.o:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/getpass.c.o
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/getpass.c.o
 .PHONY : getpass.c.o
 
 getpass.i: getpass.c.i
@@ -832,7 +832,7 @@ getpass.i: getpass.c.i
 
 # target to preprocess a source file
 getpass.c.i:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/getpass.c.i
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/getpass.c.i
 .PHONY : getpass.c.i
 
 getpass.s: getpass.c.s
@@ -840,39 +840,15 @@ getpass.s: getpass.c.s
 
 # target to generate assembly for a file
 getpass.c.s:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/getpass.c.s
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/getpass.c.s
 .PHONY : getpass.c.s
-
-gssapi.o: gssapi.c.o
-.PHONY : gssapi.o
-
-# target to build an object file
-gssapi.c.o:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/gssapi.c.o
-.PHONY : gssapi.c.o
-
-gssapi.i: gssapi.c.i
-.PHONY : gssapi.i
-
-# target to preprocess a source file
-gssapi.c.i:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/gssapi.c.i
-.PHONY : gssapi.c.i
-
-gssapi.s: gssapi.c.s
-.PHONY : gssapi.s
-
-# target to generate assembly for a file
-gssapi.c.s:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/gssapi.c.s
-.PHONY : gssapi.c.s
 
 gzip.o: gzip.c.o
 .PHONY : gzip.o
 
 # target to build an object file
 gzip.c.o:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/gzip.c.o
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/gzip.c.o
 .PHONY : gzip.c.o
 
 gzip.i: gzip.c.i
@@ -880,7 +856,7 @@ gzip.i: gzip.c.i
 
 # target to preprocess a source file
 gzip.c.i:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/gzip.c.i
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/gzip.c.i
 .PHONY : gzip.c.i
 
 gzip.s: gzip.c.s
@@ -888,7 +864,7 @@ gzip.s: gzip.c.s
 
 # target to generate assembly for a file
 gzip.c.s:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/gzip.c.s
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/gzip.c.s
 .PHONY : gzip.c.s
 
 init.o: init.c.o
@@ -896,7 +872,7 @@ init.o: init.c.o
 
 # target to build an object file
 init.c.o:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/init.c.o
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/init.c.o
 .PHONY : init.c.o
 
 init.i: init.c.i
@@ -904,7 +880,7 @@ init.i: init.c.i
 
 # target to preprocess a source file
 init.c.i:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/init.c.i
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/init.c.i
 .PHONY : init.c.i
 
 init.s: init.c.s
@@ -912,7 +888,7 @@ init.s: init.c.s
 
 # target to generate assembly for a file
 init.c.s:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/init.c.s
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/init.c.s
 .PHONY : init.c.s
 
 kdf.o: kdf.c.o
@@ -920,7 +896,7 @@ kdf.o: kdf.c.o
 
 # target to build an object file
 kdf.c.o:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/kdf.c.o
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/kdf.c.o
 .PHONY : kdf.c.o
 
 kdf.i: kdf.c.i
@@ -928,7 +904,7 @@ kdf.i: kdf.c.i
 
 # target to preprocess a source file
 kdf.c.i:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/kdf.c.i
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/kdf.c.i
 .PHONY : kdf.c.i
 
 kdf.s: kdf.c.s
@@ -936,7 +912,7 @@ kdf.s: kdf.c.s
 
 # target to generate assembly for a file
 kdf.c.s:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/kdf.c.s
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/kdf.c.s
 .PHONY : kdf.c.s
 
 kex.o: kex.c.o
@@ -944,7 +920,7 @@ kex.o: kex.c.o
 
 # target to build an object file
 kex.c.o:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/kex.c.o
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/kex.c.o
 .PHONY : kex.c.o
 
 kex.i: kex.c.i
@@ -952,7 +928,7 @@ kex.i: kex.c.i
 
 # target to preprocess a source file
 kex.c.i:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/kex.c.i
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/kex.c.i
 .PHONY : kex.c.i
 
 kex.s: kex.c.s
@@ -960,7 +936,7 @@ kex.s: kex.c.s
 
 # target to generate assembly for a file
 kex.c.s:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/kex.c.s
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/kex.c.s
 .PHONY : kex.c.s
 
 known_hosts.o: known_hosts.c.o
@@ -968,7 +944,7 @@ known_hosts.o: known_hosts.c.o
 
 # target to build an object file
 known_hosts.c.o:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/known_hosts.c.o
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/known_hosts.c.o
 .PHONY : known_hosts.c.o
 
 known_hosts.i: known_hosts.c.i
@@ -976,7 +952,7 @@ known_hosts.i: known_hosts.c.i
 
 # target to preprocess a source file
 known_hosts.c.i:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/known_hosts.c.i
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/known_hosts.c.i
 .PHONY : known_hosts.c.i
 
 known_hosts.s: known_hosts.c.s
@@ -984,7 +960,7 @@ known_hosts.s: known_hosts.c.s
 
 # target to generate assembly for a file
 known_hosts.c.s:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/known_hosts.c.s
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/known_hosts.c.s
 .PHONY : known_hosts.c.s
 
 knownhosts.o: knownhosts.c.o
@@ -992,7 +968,7 @@ knownhosts.o: knownhosts.c.o
 
 # target to build an object file
 knownhosts.c.o:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/knownhosts.c.o
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/knownhosts.c.o
 .PHONY : knownhosts.c.o
 
 knownhosts.i: knownhosts.c.i
@@ -1000,7 +976,7 @@ knownhosts.i: knownhosts.c.i
 
 # target to preprocess a source file
 knownhosts.c.i:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/knownhosts.c.i
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/knownhosts.c.i
 .PHONY : knownhosts.c.i
 
 knownhosts.s: knownhosts.c.s
@@ -1008,7 +984,7 @@ knownhosts.s: knownhosts.c.s
 
 # target to generate assembly for a file
 knownhosts.c.s:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/knownhosts.c.s
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/knownhosts.c.s
 .PHONY : knownhosts.c.s
 
 legacy.o: legacy.c.o
@@ -1016,7 +992,7 @@ legacy.o: legacy.c.o
 
 # target to build an object file
 legacy.c.o:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/legacy.c.o
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/legacy.c.o
 .PHONY : legacy.c.o
 
 legacy.i: legacy.c.i
@@ -1024,7 +1000,7 @@ legacy.i: legacy.c.i
 
 # target to preprocess a source file
 legacy.c.i:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/legacy.c.i
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/legacy.c.i
 .PHONY : legacy.c.i
 
 legacy.s: legacy.c.s
@@ -1032,7 +1008,7 @@ legacy.s: legacy.c.s
 
 # target to generate assembly for a file
 legacy.c.s:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/legacy.c.s
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/legacy.c.s
 .PHONY : legacy.c.s
 
 libcrypto.o: libcrypto.c.o
@@ -1040,7 +1016,7 @@ libcrypto.o: libcrypto.c.o
 
 # target to build an object file
 libcrypto.c.o:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/libcrypto.c.o
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/libcrypto.c.o
 .PHONY : libcrypto.c.o
 
 libcrypto.i: libcrypto.c.i
@@ -1048,7 +1024,7 @@ libcrypto.i: libcrypto.c.i
 
 # target to preprocess a source file
 libcrypto.c.i:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/libcrypto.c.i
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/libcrypto.c.i
 .PHONY : libcrypto.c.i
 
 libcrypto.s: libcrypto.c.s
@@ -1056,7 +1032,7 @@ libcrypto.s: libcrypto.c.s
 
 # target to generate assembly for a file
 libcrypto.c.s:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/libcrypto.c.s
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/libcrypto.c.s
 .PHONY : libcrypto.c.s
 
 log.o: log.c.o
@@ -1064,7 +1040,7 @@ log.o: log.c.o
 
 # target to build an object file
 log.c.o:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/log.c.o
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/log.c.o
 .PHONY : log.c.o
 
 log.i: log.c.i
@@ -1072,7 +1048,7 @@ log.i: log.c.i
 
 # target to preprocess a source file
 log.c.i:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/log.c.i
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/log.c.i
 .PHONY : log.c.i
 
 log.s: log.c.s
@@ -1080,7 +1056,7 @@ log.s: log.c.s
 
 # target to generate assembly for a file
 log.c.s:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/log.c.s
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/log.c.s
 .PHONY : log.c.s
 
 match.o: match.c.o
@@ -1088,7 +1064,7 @@ match.o: match.c.o
 
 # target to build an object file
 match.c.o:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/match.c.o
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/match.c.o
 .PHONY : match.c.o
 
 match.i: match.c.i
@@ -1096,7 +1072,7 @@ match.i: match.c.i
 
 # target to preprocess a source file
 match.c.i:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/match.c.i
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/match.c.i
 .PHONY : match.c.i
 
 match.s: match.c.s
@@ -1104,7 +1080,7 @@ match.s: match.c.s
 
 # target to generate assembly for a file
 match.c.s:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/match.c.s
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/match.c.s
 .PHONY : match.c.s
 
 messages.o: messages.c.o
@@ -1112,7 +1088,7 @@ messages.o: messages.c.o
 
 # target to build an object file
 messages.c.o:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/messages.c.o
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/messages.c.o
 .PHONY : messages.c.o
 
 messages.i: messages.c.i
@@ -1120,7 +1096,7 @@ messages.i: messages.c.i
 
 # target to preprocess a source file
 messages.c.i:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/messages.c.i
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/messages.c.i
 .PHONY : messages.c.i
 
 messages.s: messages.c.s
@@ -1128,7 +1104,7 @@ messages.s: messages.c.s
 
 # target to generate assembly for a file
 messages.c.s:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/messages.c.s
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/messages.c.s
 .PHONY : messages.c.s
 
 misc.o: misc.c.o
@@ -1136,7 +1112,7 @@ misc.o: misc.c.o
 
 # target to build an object file
 misc.c.o:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/misc.c.o
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/misc.c.o
 .PHONY : misc.c.o
 
 misc.i: misc.c.i
@@ -1144,7 +1120,7 @@ misc.i: misc.c.i
 
 # target to preprocess a source file
 misc.c.i:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/misc.c.i
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/misc.c.i
 .PHONY : misc.c.i
 
 misc.s: misc.c.s
@@ -1152,7 +1128,7 @@ misc.s: misc.c.s
 
 # target to generate assembly for a file
 misc.c.s:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/misc.c.s
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/misc.c.s
 .PHONY : misc.c.s
 
 options.o: options.c.o
@@ -1160,7 +1136,7 @@ options.o: options.c.o
 
 # target to build an object file
 options.c.o:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/options.c.o
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/options.c.o
 .PHONY : options.c.o
 
 options.i: options.c.i
@@ -1168,7 +1144,7 @@ options.i: options.c.i
 
 # target to preprocess a source file
 options.c.i:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/options.c.i
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/options.c.i
 .PHONY : options.c.i
 
 options.s: options.c.s
@@ -1176,7 +1152,7 @@ options.s: options.c.s
 
 # target to generate assembly for a file
 options.c.s:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/options.c.s
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/options.c.s
 .PHONY : options.c.s
 
 packet.o: packet.c.o
@@ -1184,7 +1160,7 @@ packet.o: packet.c.o
 
 # target to build an object file
 packet.c.o:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/packet.c.o
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/packet.c.o
 .PHONY : packet.c.o
 
 packet.i: packet.c.i
@@ -1192,7 +1168,7 @@ packet.i: packet.c.i
 
 # target to preprocess a source file
 packet.c.i:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/packet.c.i
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/packet.c.i
 .PHONY : packet.c.i
 
 packet.s: packet.c.s
@@ -1200,7 +1176,7 @@ packet.s: packet.c.s
 
 # target to generate assembly for a file
 packet.c.s:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/packet.c.s
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/packet.c.s
 .PHONY : packet.c.s
 
 packet_cb.o: packet_cb.c.o
@@ -1208,7 +1184,7 @@ packet_cb.o: packet_cb.c.o
 
 # target to build an object file
 packet_cb.c.o:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/packet_cb.c.o
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/packet_cb.c.o
 .PHONY : packet_cb.c.o
 
 packet_cb.i: packet_cb.c.i
@@ -1216,7 +1192,7 @@ packet_cb.i: packet_cb.c.i
 
 # target to preprocess a source file
 packet_cb.c.i:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/packet_cb.c.i
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/packet_cb.c.i
 .PHONY : packet_cb.c.i
 
 packet_cb.s: packet_cb.c.s
@@ -1224,7 +1200,7 @@ packet_cb.s: packet_cb.c.s
 
 # target to generate assembly for a file
 packet_cb.c.s:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/packet_cb.c.s
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/packet_cb.c.s
 .PHONY : packet_cb.c.s
 
 packet_crypt.o: packet_crypt.c.o
@@ -1232,7 +1208,7 @@ packet_crypt.o: packet_crypt.c.o
 
 # target to build an object file
 packet_crypt.c.o:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/packet_crypt.c.o
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/packet_crypt.c.o
 .PHONY : packet_crypt.c.o
 
 packet_crypt.i: packet_crypt.c.i
@@ -1240,7 +1216,7 @@ packet_crypt.i: packet_crypt.c.i
 
 # target to preprocess a source file
 packet_crypt.c.i:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/packet_crypt.c.i
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/packet_crypt.c.i
 .PHONY : packet_crypt.c.i
 
 packet_crypt.s: packet_crypt.c.s
@@ -1248,7 +1224,7 @@ packet_crypt.s: packet_crypt.c.s
 
 # target to generate assembly for a file
 packet_crypt.c.s:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/packet_crypt.c.s
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/packet_crypt.c.s
 .PHONY : packet_crypt.c.s
 
 pcap.o: pcap.c.o
@@ -1256,7 +1232,7 @@ pcap.o: pcap.c.o
 
 # target to build an object file
 pcap.c.o:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/pcap.c.o
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/pcap.c.o
 .PHONY : pcap.c.o
 
 pcap.i: pcap.c.i
@@ -1264,7 +1240,7 @@ pcap.i: pcap.c.i
 
 # target to preprocess a source file
 pcap.c.i:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/pcap.c.i
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/pcap.c.i
 .PHONY : pcap.c.i
 
 pcap.s: pcap.c.s
@@ -1272,7 +1248,7 @@ pcap.s: pcap.c.s
 
 # target to generate assembly for a file
 pcap.c.s:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/pcap.c.s
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/pcap.c.s
 .PHONY : pcap.c.s
 
 pki.o: pki.c.o
@@ -1280,7 +1256,7 @@ pki.o: pki.c.o
 
 # target to build an object file
 pki.c.o:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/pki.c.o
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/pki.c.o
 .PHONY : pki.c.o
 
 pki.i: pki.c.i
@@ -1288,7 +1264,7 @@ pki.i: pki.c.i
 
 # target to preprocess a source file
 pki.c.i:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/pki.c.i
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/pki.c.i
 .PHONY : pki.c.i
 
 pki.s: pki.c.s
@@ -1296,7 +1272,7 @@ pki.s: pki.c.s
 
 # target to generate assembly for a file
 pki.c.s:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/pki.c.s
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/pki.c.s
 .PHONY : pki.c.s
 
 pki_container_openssh.o: pki_container_openssh.c.o
@@ -1304,7 +1280,7 @@ pki_container_openssh.o: pki_container_openssh.c.o
 
 # target to build an object file
 pki_container_openssh.c.o:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/pki_container_openssh.c.o
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/pki_container_openssh.c.o
 .PHONY : pki_container_openssh.c.o
 
 pki_container_openssh.i: pki_container_openssh.c.i
@@ -1312,7 +1288,7 @@ pki_container_openssh.i: pki_container_openssh.c.i
 
 # target to preprocess a source file
 pki_container_openssh.c.i:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/pki_container_openssh.c.i
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/pki_container_openssh.c.i
 .PHONY : pki_container_openssh.c.i
 
 pki_container_openssh.s: pki_container_openssh.c.s
@@ -1320,7 +1296,7 @@ pki_container_openssh.s: pki_container_openssh.c.s
 
 # target to generate assembly for a file
 pki_container_openssh.c.s:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/pki_container_openssh.c.s
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/pki_container_openssh.c.s
 .PHONY : pki_container_openssh.c.s
 
 pki_crypto.o: pki_crypto.c.o
@@ -1328,7 +1304,7 @@ pki_crypto.o: pki_crypto.c.o
 
 # target to build an object file
 pki_crypto.c.o:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/pki_crypto.c.o
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/pki_crypto.c.o
 .PHONY : pki_crypto.c.o
 
 pki_crypto.i: pki_crypto.c.i
@@ -1336,7 +1312,7 @@ pki_crypto.i: pki_crypto.c.i
 
 # target to preprocess a source file
 pki_crypto.c.i:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/pki_crypto.c.i
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/pki_crypto.c.i
 .PHONY : pki_crypto.c.i
 
 pki_crypto.s: pki_crypto.c.s
@@ -1344,7 +1320,7 @@ pki_crypto.s: pki_crypto.c.s
 
 # target to generate assembly for a file
 pki_crypto.c.s:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/pki_crypto.c.s
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/pki_crypto.c.s
 .PHONY : pki_crypto.c.s
 
 pki_ed25519_common.o: pki_ed25519_common.c.o
@@ -1352,7 +1328,7 @@ pki_ed25519_common.o: pki_ed25519_common.c.o
 
 # target to build an object file
 pki_ed25519_common.c.o:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/pki_ed25519_common.c.o
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/pki_ed25519_common.c.o
 .PHONY : pki_ed25519_common.c.o
 
 pki_ed25519_common.i: pki_ed25519_common.c.i
@@ -1360,7 +1336,7 @@ pki_ed25519_common.i: pki_ed25519_common.c.i
 
 # target to preprocess a source file
 pki_ed25519_common.c.i:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/pki_ed25519_common.c.i
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/pki_ed25519_common.c.i
 .PHONY : pki_ed25519_common.c.i
 
 pki_ed25519_common.s: pki_ed25519_common.c.s
@@ -1368,7 +1344,7 @@ pki_ed25519_common.s: pki_ed25519_common.c.s
 
 # target to generate assembly for a file
 pki_ed25519_common.c.s:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/pki_ed25519_common.c.s
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/pki_ed25519_common.c.s
 .PHONY : pki_ed25519_common.c.s
 
 poll.o: poll.c.o
@@ -1376,7 +1352,7 @@ poll.o: poll.c.o
 
 # target to build an object file
 poll.c.o:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/poll.c.o
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/poll.c.o
 .PHONY : poll.c.o
 
 poll.i: poll.c.i
@@ -1384,7 +1360,7 @@ poll.i: poll.c.i
 
 # target to preprocess a source file
 poll.c.i:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/poll.c.i
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/poll.c.i
 .PHONY : poll.c.i
 
 poll.s: poll.c.s
@@ -1392,7 +1368,7 @@ poll.s: poll.c.s
 
 # target to generate assembly for a file
 poll.c.s:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/poll.c.s
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/poll.c.s
 .PHONY : poll.c.s
 
 scp.o: scp.c.o
@@ -1400,7 +1376,7 @@ scp.o: scp.c.o
 
 # target to build an object file
 scp.c.o:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/scp.c.o
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/scp.c.o
 .PHONY : scp.c.o
 
 scp.i: scp.c.i
@@ -1408,7 +1384,7 @@ scp.i: scp.c.i
 
 # target to preprocess a source file
 scp.c.i:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/scp.c.i
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/scp.c.i
 .PHONY : scp.c.i
 
 scp.s: scp.c.s
@@ -1416,7 +1392,7 @@ scp.s: scp.c.s
 
 # target to generate assembly for a file
 scp.c.s:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/scp.c.s
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/scp.c.s
 .PHONY : scp.c.s
 
 server.o: server.c.o
@@ -1424,7 +1400,7 @@ server.o: server.c.o
 
 # target to build an object file
 server.c.o:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/server.c.o
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/server.c.o
 .PHONY : server.c.o
 
 server.i: server.c.i
@@ -1432,7 +1408,7 @@ server.i: server.c.i
 
 # target to preprocess a source file
 server.c.i:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/server.c.i
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/server.c.i
 .PHONY : server.c.i
 
 server.s: server.c.s
@@ -1440,7 +1416,7 @@ server.s: server.c.s
 
 # target to generate assembly for a file
 server.c.s:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/server.c.s
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/server.c.s
 .PHONY : server.c.s
 
 session.o: session.c.o
@@ -1448,7 +1424,7 @@ session.o: session.c.o
 
 # target to build an object file
 session.c.o:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/session.c.o
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/session.c.o
 .PHONY : session.c.o
 
 session.i: session.c.i
@@ -1456,7 +1432,7 @@ session.i: session.c.i
 
 # target to preprocess a source file
 session.c.i:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/session.c.i
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/session.c.i
 .PHONY : session.c.i
 
 session.s: session.c.s
@@ -1464,7 +1440,7 @@ session.s: session.c.s
 
 # target to generate assembly for a file
 session.c.s:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/session.c.s
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/session.c.s
 .PHONY : session.c.s
 
 sftp.o: sftp.c.o
@@ -1472,7 +1448,7 @@ sftp.o: sftp.c.o
 
 # target to build an object file
 sftp.c.o:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/sftp.c.o
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/sftp.c.o
 .PHONY : sftp.c.o
 
 sftp.i: sftp.c.i
@@ -1480,7 +1456,7 @@ sftp.i: sftp.c.i
 
 # target to preprocess a source file
 sftp.c.i:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/sftp.c.i
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/sftp.c.i
 .PHONY : sftp.c.i
 
 sftp.s: sftp.c.s
@@ -1488,7 +1464,7 @@ sftp.s: sftp.c.s
 
 # target to generate assembly for a file
 sftp.c.s:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/sftp.c.s
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/sftp.c.s
 .PHONY : sftp.c.s
 
 sftpserver.o: sftpserver.c.o
@@ -1496,7 +1472,7 @@ sftpserver.o: sftpserver.c.o
 
 # target to build an object file
 sftpserver.c.o:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/sftpserver.c.o
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/sftpserver.c.o
 .PHONY : sftpserver.c.o
 
 sftpserver.i: sftpserver.c.i
@@ -1504,7 +1480,7 @@ sftpserver.i: sftpserver.c.i
 
 # target to preprocess a source file
 sftpserver.c.i:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/sftpserver.c.i
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/sftpserver.c.i
 .PHONY : sftpserver.c.i
 
 sftpserver.s: sftpserver.c.s
@@ -1512,7 +1488,7 @@ sftpserver.s: sftpserver.c.s
 
 # target to generate assembly for a file
 sftpserver.c.s:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/sftpserver.c.s
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/sftpserver.c.s
 .PHONY : sftpserver.c.s
 
 socket.o: socket.c.o
@@ -1520,7 +1496,7 @@ socket.o: socket.c.o
 
 # target to build an object file
 socket.c.o:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/socket.c.o
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/socket.c.o
 .PHONY : socket.c.o
 
 socket.i: socket.c.i
@@ -1528,7 +1504,7 @@ socket.i: socket.c.i
 
 # target to preprocess a source file
 socket.c.i:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/socket.c.i
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/socket.c.i
 .PHONY : socket.c.i
 
 socket.s: socket.c.s
@@ -1536,7 +1512,7 @@ socket.s: socket.c.s
 
 # target to generate assembly for a file
 socket.c.s:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/socket.c.s
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/socket.c.s
 .PHONY : socket.c.s
 
 string.o: string.c.o
@@ -1544,7 +1520,7 @@ string.o: string.c.o
 
 # target to build an object file
 string.c.o:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/string.c.o
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/string.c.o
 .PHONY : string.c.o
 
 string.i: string.c.i
@@ -1552,7 +1528,7 @@ string.i: string.c.i
 
 # target to preprocess a source file
 string.c.i:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/string.c.i
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/string.c.i
 .PHONY : string.c.i
 
 string.s: string.c.s
@@ -1560,7 +1536,7 @@ string.s: string.c.s
 
 # target to generate assembly for a file
 string.c.s:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/string.c.s
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/string.c.s
 .PHONY : string.c.s
 
 threads.o: threads.c.o
@@ -1568,7 +1544,7 @@ threads.o: threads.c.o
 
 # target to build an object file
 threads.c.o:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/threads.c.o
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/threads.c.o
 .PHONY : threads.c.o
 
 threads.i: threads.c.i
@@ -1576,7 +1552,7 @@ threads.i: threads.c.i
 
 # target to preprocess a source file
 threads.c.i:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/threads.c.i
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/threads.c.i
 .PHONY : threads.c.i
 
 threads.s: threads.c.s
@@ -1584,7 +1560,7 @@ threads.s: threads.c.s
 
 # target to generate assembly for a file
 threads.c.s:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/threads.c.s
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/threads.c.s
 .PHONY : threads.c.s
 
 threads/libcrypto.o: threads/libcrypto.c.o
@@ -1592,7 +1568,7 @@ threads/libcrypto.o: threads/libcrypto.c.o
 
 # target to build an object file
 threads/libcrypto.c.o:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/threads/libcrypto.c.o
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/threads/libcrypto.c.o
 .PHONY : threads/libcrypto.c.o
 
 threads/libcrypto.i: threads/libcrypto.c.i
@@ -1600,7 +1576,7 @@ threads/libcrypto.i: threads/libcrypto.c.i
 
 # target to preprocess a source file
 threads/libcrypto.c.i:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/threads/libcrypto.c.i
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/threads/libcrypto.c.i
 .PHONY : threads/libcrypto.c.i
 
 threads/libcrypto.s: threads/libcrypto.c.s
@@ -1608,7 +1584,7 @@ threads/libcrypto.s: threads/libcrypto.c.s
 
 # target to generate assembly for a file
 threads/libcrypto.c.s:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/threads/libcrypto.c.s
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/threads/libcrypto.c.s
 .PHONY : threads/libcrypto.c.s
 
 threads/noop.o: threads/noop.c.o
@@ -1616,7 +1592,7 @@ threads/noop.o: threads/noop.c.o
 
 # target to build an object file
 threads/noop.c.o:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/threads/noop.c.o
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/threads/noop.c.o
 .PHONY : threads/noop.c.o
 
 threads/noop.i: threads/noop.c.i
@@ -1624,7 +1600,7 @@ threads/noop.i: threads/noop.c.i
 
 # target to preprocess a source file
 threads/noop.c.i:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/threads/noop.c.i
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/threads/noop.c.i
 .PHONY : threads/noop.c.i
 
 threads/noop.s: threads/noop.c.s
@@ -1632,7 +1608,7 @@ threads/noop.s: threads/noop.c.s
 
 # target to generate assembly for a file
 threads/noop.c.s:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/threads/noop.c.s
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/threads/noop.c.s
 .PHONY : threads/noop.c.s
 
 threads/pthread.o: threads/pthread.c.o
@@ -1640,7 +1616,7 @@ threads/pthread.o: threads/pthread.c.o
 
 # target to build an object file
 threads/pthread.c.o:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/threads/pthread.c.o
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/threads/pthread.c.o
 .PHONY : threads/pthread.c.o
 
 threads/pthread.i: threads/pthread.c.i
@@ -1648,7 +1624,7 @@ threads/pthread.i: threads/pthread.c.i
 
 # target to preprocess a source file
 threads/pthread.c.i:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/threads/pthread.c.i
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/threads/pthread.c.i
 .PHONY : threads/pthread.c.i
 
 threads/pthread.s: threads/pthread.c.s
@@ -1656,7 +1632,7 @@ threads/pthread.s: threads/pthread.c.s
 
 # target to generate assembly for a file
 threads/pthread.c.s:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/threads/pthread.c.s
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/threads/pthread.c.s
 .PHONY : threads/pthread.c.s
 
 token.o: token.c.o
@@ -1664,7 +1640,7 @@ token.o: token.c.o
 
 # target to build an object file
 token.c.o:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/token.c.o
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/token.c.o
 .PHONY : token.c.o
 
 token.i: token.c.i
@@ -1672,7 +1648,7 @@ token.i: token.c.i
 
 # target to preprocess a source file
 token.c.i:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/token.c.i
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/token.c.i
 .PHONY : token.c.i
 
 token.s: token.c.s
@@ -1680,7 +1656,7 @@ token.s: token.c.s
 
 # target to generate assembly for a file
 token.c.s:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/token.c.s
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/token.c.s
 .PHONY : token.c.s
 
 wrapper.o: wrapper.c.o
@@ -1688,7 +1664,7 @@ wrapper.o: wrapper.c.o
 
 # target to build an object file
 wrapper.c.o:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/wrapper.c.o
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/wrapper.c.o
 .PHONY : wrapper.c.o
 
 wrapper.i: wrapper.c.i
@@ -1696,7 +1672,7 @@ wrapper.i: wrapper.c.i
 
 # target to preprocess a source file
 wrapper.c.i:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/wrapper.c.i
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/wrapper.c.i
 .PHONY : wrapper.c.i
 
 wrapper.s: wrapper.c.s
@@ -1704,7 +1680,7 @@ wrapper.s: wrapper.c.s
 
 # target to generate assembly for a file
 wrapper.c.s:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/wrapper.c.s
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/ssh.dir/build.make src/CMakeFiles/ssh.dir/wrapper.c.s
 .PHONY : wrapper.c.s
 
 # Help Target
@@ -1803,9 +1779,6 @@ help:
 	@echo "... getpass.o"
 	@echo "... getpass.i"
 	@echo "... getpass.s"
-	@echo "... gssapi.o"
-	@echo "... gssapi.i"
-	@echo "... gssapi.s"
 	@echo "... gzip.o"
 	@echo "... gzip.i"
 	@echo "... gzip.s"
@@ -1922,6 +1895,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

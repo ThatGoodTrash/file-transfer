@@ -1,5 +1,5 @@
 src/CMakeFiles/ssh.dir/external/chacha.c.o: \
- /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/src/external/chacha.c \
+ /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/src/external/chacha.c \
  /usr/include/stdc-predef.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
@@ -38,4 +38,4 @@ src/CMakeFiles/ssh.dir/external/chacha.c.o: \
  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
- /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/include/libssh/chacha.h
+ /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/include/libssh/chacha.h

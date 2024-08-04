@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6
+CMAKE_SOURCE_DIR = /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build
+CMAKE_BINARY_DIR = /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -78,7 +78,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool for source..."
-	/usr/bin/cpack --config ./CPackSourceConfig.cmake /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/CPackSourceConfig.cmake
+	/usr/bin/cpack --config ./CPackSourceConfig.cmake /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -152,9 +152,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/CMakeFiles /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/CMakeFiles /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -286,45 +286,6 @@ ssh_server_fork/fast:
 .PHONY : ssh_server_fork/fast
 
 #=============================================================================
-# Target rules for targets named samplesshd-cb
-
-# Build rule for target.
-samplesshd-cb: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 samplesshd-cb
-.PHONY : samplesshd-cb
-
-# fast build rule for target.
-samplesshd-cb/fast:
-	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/samplesshd-cb.dir/build.make examples/CMakeFiles/samplesshd-cb.dir/build
-.PHONY : samplesshd-cb/fast
-
-#=============================================================================
-# Target rules for targets named proxy
-
-# Build rule for target.
-proxy: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 proxy
-.PHONY : proxy
-
-# fast build rule for target.
-proxy/fast:
-	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/proxy.dir/build.make examples/CMakeFiles/proxy.dir/build
-.PHONY : proxy/fast
-
-#=============================================================================
-# Target rules for targets named sshd_direct-tcpip
-
-# Build rule for target.
-sshd_direct-tcpip: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sshd_direct-tcpip
-.PHONY : sshd_direct-tcpip
-
-# fast build rule for target.
-sshd_direct-tcpip/fast:
-	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/sshd_direct-tcpip.dir/build.make examples/CMakeFiles/sshd_direct-tcpip.dir/build
-.PHONY : sshd_direct-tcpip/fast
-
-#=============================================================================
 # Target rules for targets named samplesshd-kbdint
 
 # Build rule for target.
@@ -422,16 +383,13 @@ help:
 	@echo "... libssh_scp"
 	@echo "... libsshpp"
 	@echo "... libsshpp_noexcept"
-	@echo "... proxy"
 	@echo "... samplesftp"
-	@echo "... samplesshd-cb"
 	@echo "... samplesshd-kbdint"
 	@echo "... scp_download"
 	@echo "... senddata"
 	@echo "... ssh"
 	@echo "... ssh-client"
 	@echo "... ssh_server_fork"
-	@echo "... sshd_direct-tcpip"
 	@echo "... sshnetcat"
 .PHONY : help
 

@@ -53,8 +53,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/ssh.dir/external/poly1305.c.o.d"
   "CMakeFiles/ssh.dir/getpass.c.o"
   "CMakeFiles/ssh.dir/getpass.c.o.d"
-  "CMakeFiles/ssh.dir/gssapi.c.o"
-  "CMakeFiles/ssh.dir/gssapi.c.o.d"
   "CMakeFiles/ssh.dir/gzip.c.o"
   "CMakeFiles/ssh.dir/gzip.c.o.d"
   "CMakeFiles/ssh.dir/init.c.o"

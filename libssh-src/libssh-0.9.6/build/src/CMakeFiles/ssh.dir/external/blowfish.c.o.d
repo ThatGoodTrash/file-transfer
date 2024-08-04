@@ -1,5 +1,5 @@
 src/CMakeFiles/ssh.dir/external/blowfish.c.o: \
- /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/src/external/blowfish.c \
+ /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/src/external/blowfish.c \
  /usr/include/stdc-predef.h /usr/include/x86_64-linux-gnu/sys/types.h \
  /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -37,4 +37,4 @@ src/CMakeFiles/ssh.dir/external/blowfish.c.o: \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/include/libssh/blf.h
+ /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/include/libssh/blf.h

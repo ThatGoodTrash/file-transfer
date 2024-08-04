@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6
+CMAKE_SOURCE_DIR = /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build
+CMAKE_BINARY_DIR = /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build
 
 # Include any dependencies generated for this target.
 include examples/CMakeFiles/samplesshd-kbdint.dir/depend.make
@@ -70,18 +70,18 @@ include examples/CMakeFiles/samplesshd-kbdint.dir/progress.make
 include examples/CMakeFiles/samplesshd-kbdint.dir/flags.make
 
 examples/CMakeFiles/samplesshd-kbdint.dir/samplesshd-kbdint.c.o: examples/CMakeFiles/samplesshd-kbdint.dir/flags.make
-examples/CMakeFiles/samplesshd-kbdint.dir/samplesshd-kbdint.c.o: /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/examples/samplesshd-kbdint.c
+examples/CMakeFiles/samplesshd-kbdint.dir/samplesshd-kbdint.c.o: /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/examples/samplesshd-kbdint.c
 examples/CMakeFiles/samplesshd-kbdint.dir/samplesshd-kbdint.c.o: examples/CMakeFiles/samplesshd-kbdint.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object examples/CMakeFiles/samplesshd-kbdint.dir/samplesshd-kbdint.c.o"
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT examples/CMakeFiles/samplesshd-kbdint.dir/samplesshd-kbdint.c.o -MF CMakeFiles/samplesshd-kbdint.dir/samplesshd-kbdint.c.o.d -o CMakeFiles/samplesshd-kbdint.dir/samplesshd-kbdint.c.o -c /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/examples/samplesshd-kbdint.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object examples/CMakeFiles/samplesshd-kbdint.dir/samplesshd-kbdint.c.o"
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT examples/CMakeFiles/samplesshd-kbdint.dir/samplesshd-kbdint.c.o -MF CMakeFiles/samplesshd-kbdint.dir/samplesshd-kbdint.c.o.d -o CMakeFiles/samplesshd-kbdint.dir/samplesshd-kbdint.c.o -c /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/examples/samplesshd-kbdint.c
 
 examples/CMakeFiles/samplesshd-kbdint.dir/samplesshd-kbdint.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/samplesshd-kbdint.dir/samplesshd-kbdint.c.i"
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/examples/samplesshd-kbdint.c > CMakeFiles/samplesshd-kbdint.dir/samplesshd-kbdint.c.i
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/examples/samplesshd-kbdint.c > CMakeFiles/samplesshd-kbdint.dir/samplesshd-kbdint.c.i
 
 examples/CMakeFiles/samplesshd-kbdint.dir/samplesshd-kbdint.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/samplesshd-kbdint.dir/samplesshd-kbdint.c.s"
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/examples/samplesshd-kbdint.c -o CMakeFiles/samplesshd-kbdint.dir/samplesshd-kbdint.c.s
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/examples/samplesshd-kbdint.c -o CMakeFiles/samplesshd-kbdint.dir/samplesshd-kbdint.c.s
 
 # Object files for target samplesshd-kbdint
 samplesshd__kbdint_OBJECTS = \
@@ -95,23 +95,19 @@ examples/samplesshd-kbdint: examples/CMakeFiles/samplesshd-kbdint.dir/build.make
 examples/samplesshd-kbdint: src/libssh.a
 examples/samplesshd-kbdint: /usr/lib/x86_64-linux-gnu/libcrypto.so
 examples/samplesshd-kbdint: /usr/lib/x86_64-linux-gnu/libz.so
-examples/samplesshd-kbdint: /usr/lib/x86_64-linux-gnu/libgssapi_krb5.so
-examples/samplesshd-kbdint: /usr/lib/x86_64-linux-gnu/libkrb5.so
-examples/samplesshd-kbdint: /usr/lib/x86_64-linux-gnu/libk5crypto.so
-examples/samplesshd-kbdint: /usr/lib/x86_64-linux-gnu/libcom_err.so
 examples/samplesshd-kbdint: examples/CMakeFiles/samplesshd-kbdint.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable samplesshd-kbdint"
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/examples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/samplesshd-kbdint.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable samplesshd-kbdint"
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/examples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/samplesshd-kbdint.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 examples/CMakeFiles/samplesshd-kbdint.dir/build: examples/samplesshd-kbdint
 .PHONY : examples/CMakeFiles/samplesshd-kbdint.dir/build
 
 examples/CMakeFiles/samplesshd-kbdint.dir/clean:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/examples && $(CMAKE_COMMAND) -P CMakeFiles/samplesshd-kbdint.dir/cmake_clean.cmake
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/examples && $(CMAKE_COMMAND) -P CMakeFiles/samplesshd-kbdint.dir/cmake_clean.cmake
 .PHONY : examples/CMakeFiles/samplesshd-kbdint.dir/clean
 
 examples/CMakeFiles/samplesshd-kbdint.dir/depend:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6 /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/examples /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/examples /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/examples/CMakeFiles/samplesshd-kbdint.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6 /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/examples /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/examples /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/examples/CMakeFiles/samplesshd-kbdint.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : examples/CMakeFiles/samplesshd-kbdint.dir/depend
 

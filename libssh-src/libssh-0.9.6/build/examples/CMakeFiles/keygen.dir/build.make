@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6
+CMAKE_SOURCE_DIR = /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build
+CMAKE_BINARY_DIR = /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build
 
 # Include any dependencies generated for this target.
 include examples/CMakeFiles/keygen.dir/depend.make
@@ -70,18 +70,18 @@ include examples/CMakeFiles/keygen.dir/progress.make
 include examples/CMakeFiles/keygen.dir/flags.make
 
 examples/CMakeFiles/keygen.dir/keygen.c.o: examples/CMakeFiles/keygen.dir/flags.make
-examples/CMakeFiles/keygen.dir/keygen.c.o: /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/examples/keygen.c
+examples/CMakeFiles/keygen.dir/keygen.c.o: /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/examples/keygen.c
 examples/CMakeFiles/keygen.dir/keygen.c.o: examples/CMakeFiles/keygen.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object examples/CMakeFiles/keygen.dir/keygen.c.o"
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT examples/CMakeFiles/keygen.dir/keygen.c.o -MF CMakeFiles/keygen.dir/keygen.c.o.d -o CMakeFiles/keygen.dir/keygen.c.o -c /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/examples/keygen.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object examples/CMakeFiles/keygen.dir/keygen.c.o"
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT examples/CMakeFiles/keygen.dir/keygen.c.o -MF CMakeFiles/keygen.dir/keygen.c.o.d -o CMakeFiles/keygen.dir/keygen.c.o -c /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/examples/keygen.c
 
 examples/CMakeFiles/keygen.dir/keygen.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/keygen.dir/keygen.c.i"
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/examples/keygen.c > CMakeFiles/keygen.dir/keygen.c.i
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/examples/keygen.c > CMakeFiles/keygen.dir/keygen.c.i
 
 examples/CMakeFiles/keygen.dir/keygen.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/keygen.dir/keygen.c.s"
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/examples/keygen.c -o CMakeFiles/keygen.dir/keygen.c.s
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/examples && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/examples/keygen.c -o CMakeFiles/keygen.dir/keygen.c.s
 
 # Object files for target keygen
 keygen_OBJECTS = \
@@ -95,23 +95,19 @@ examples/keygen: examples/CMakeFiles/keygen.dir/build.make
 examples/keygen: src/libssh.a
 examples/keygen: /usr/lib/x86_64-linux-gnu/libcrypto.so
 examples/keygen: /usr/lib/x86_64-linux-gnu/libz.so
-examples/keygen: /usr/lib/x86_64-linux-gnu/libgssapi_krb5.so
-examples/keygen: /usr/lib/x86_64-linux-gnu/libkrb5.so
-examples/keygen: /usr/lib/x86_64-linux-gnu/libk5crypto.so
-examples/keygen: /usr/lib/x86_64-linux-gnu/libcom_err.so
 examples/keygen: examples/CMakeFiles/keygen.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable keygen"
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/examples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/keygen.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable keygen"
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/examples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/keygen.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 examples/CMakeFiles/keygen.dir/build: examples/keygen
 .PHONY : examples/CMakeFiles/keygen.dir/build
 
 examples/CMakeFiles/keygen.dir/clean:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/examples && $(CMAKE_COMMAND) -P CMakeFiles/keygen.dir/cmake_clean.cmake
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/examples && $(CMAKE_COMMAND) -P CMakeFiles/keygen.dir/cmake_clean.cmake
 .PHONY : examples/CMakeFiles/keygen.dir/clean
 
 examples/CMakeFiles/keygen.dir/depend:
-	cd /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6 /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/examples /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/examples /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/examples/CMakeFiles/keygen.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6 /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/examples /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/examples /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/examples/CMakeFiles/keygen.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : examples/CMakeFiles/keygen.dir/depend
 

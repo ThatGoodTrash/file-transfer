@@ -1,4 +1,4 @@
-# Install script for directory: /home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/src
+# Install script for directory: /home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -43,14 +43,14 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "libraries" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/src/libssh.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/src/libssh.a")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/libssh/libssh-config.cmake")
     file(DIFFERENT _cmake_export_file_changed FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/libssh/libssh-config.cmake"
-         "/home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/src/CMakeFiles/Export/35adb0cb40569b434abcb13fe0a6f11a/libssh-config.cmake")
+         "/home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/src/CMakeFiles/Export/35adb0cb40569b434abcb13fe0a6f11a/libssh-config.cmake")
     if(_cmake_export_file_changed)
       file(GLOB _cmake_old_config_files "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/libssh/libssh-config-*.cmake")
       if(_cmake_old_config_files)
@@ -63,9 +63,9 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     endif()
     unset(_cmake_export_file_changed)
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/libssh" TYPE FILE FILES "/home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/src/CMakeFiles/Export/35adb0cb40569b434abcb13fe0a6f11a/libssh-config.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/libssh" TYPE FILE FILES "/home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/src/CMakeFiles/Export/35adb0cb40569b434abcb13fe0a6f11a/libssh-config.cmake")
   if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^()$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/libssh" TYPE FILE FILES "/home/kali/projects/file-transfer/libssh-src/libssh-0.9.6/build/src/CMakeFiles/Export/35adb0cb40569b434abcb13fe0a6f11a/libssh-config-noconfig.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/libssh" TYPE FILE FILES "/home/kali/projects/file-transfer/file-transfer/libssh-src/libssh-0.9.6/build/src/CMakeFiles/Export/35adb0cb40569b434abcb13fe0a6f11a/libssh-config-noconfig.cmake")
   endif()
 endif()
 
