@@ -28,7 +28,7 @@ clean:
 	rm -f $(TARGET) $(OBJS)
 
 # Compile each .cpp file to .o file
-%.o: %.cpp
-	$(CXX) $(CXXFLAGS) -c $< -o $@
+# %.o: %.cpp
+# 	$(CXX) $(CXXFLAGS) -c $< -o $@
 
 .PHONY: all clean
